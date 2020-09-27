@@ -51,6 +51,15 @@ body {
     margin: 5px;
 }
 
+.footerText {
+    position: absolute;
+    left: 0;
+    color: #ffffff;
+    margin-left: 5px;
+    line-height: 50px;
+    vertical-align: top;
+}
+
 .websiteAnchor,
 .websiteAnchor:link,
 .websiteAnchor:visited {
@@ -75,14 +84,18 @@ body {
 /* Above Content */
 
 .websiteContent {
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(3px);
     display: flex;
     text-align: center;
-    padding: 50px 0 200px 0;
+    padding: 50px 0 50px 0;
     color: #ffffff;
     min-height: calc(100vh - 100px);
     background: transparent;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 /* Below Content */
 
 .websiteFooter {
