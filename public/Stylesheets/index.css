@@ -8,6 +8,7 @@
     box-sizing: border-box;
     background: #000000;
     z-index: 1;
+    color: #ffffff;
 }
 
 *::-webkit-scrollbar {
@@ -54,7 +55,6 @@ body {
 .footerText {
     position: absolute;
     left: 0;
-    color: #ffffff;
     margin-left: 5px;
     line-height: 50px;
     vertical-align: top;
@@ -88,7 +88,6 @@ body {
     display: flex;
     text-align: center;
     padding: 50px 0 50px 0;
-    color: #ffffff;
     min-height: calc(100vh - 100px);
     background: transparent;
     flex-direction: column;
