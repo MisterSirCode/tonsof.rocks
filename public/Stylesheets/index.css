@@ -105,9 +105,9 @@ body {
 
 .iosAppRound {
     border-radius: 0;
-    -webkit-mask-image: url(./Icons/ios-mask.svg);
+    border: 0;
+    -webkit-mask-image: url("../Icons/ios-mask.svg");
     -webkit-mask-size: cover;
-    mask-image: url(./Icons/ios-mask.svg);
+    mask-image: url("../Icons/ios-mask.svg");
     mask-size: cover;
-    border: 1px solid rgba(127.5, 127.5, 127.5);
 }
