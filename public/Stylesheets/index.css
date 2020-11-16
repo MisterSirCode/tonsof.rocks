@@ -109,4 +109,5 @@ body {
     -webkit-mask-size: cover;
     mask-image: url(/public/Icons/ios-mask.svg);
     mask-size: cover;
+    border: 1px solid rgba(127.5, 127.5, 127.5);
 }
