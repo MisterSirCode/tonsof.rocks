@@ -100,3 +100,13 @@ body {
 .websiteFooter {
     text-align: right;
 }
+
+/* Other */
+
+.iosAppRound {
+    border-radius: 0;
+    -webkit-mask-image: url(/public/Icons/ios-mask.svg);
+    -webkit-mask-size: cover;
+    mask-image: url(/public/Icons/ios-mask.svg);
+    mask-size: cover;
+}
