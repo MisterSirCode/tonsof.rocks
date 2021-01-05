@@ -1,11 +1,11 @@
 :root {
-	--rtBackground: #111;
-	--rtBackgroundo: rgba(17, 17, 17, 0.5);
-	--rtBackground2: #222;
-	--rtBackground3: #333;
-	--rtOutlineColor: #333;
+	--rtBackground: #222;
+	--rtBackgroundo: rgba(17, 17, 17, 0.7);
+	--rtBackground2: #333;
+	--rtBackground3: #444;
+	--rtOutlineColor: #555;
 	--rtOutline: 0px solid var(--rtOutlineColor);
-	--rtBoxShadow: 0px 0px 20px 3px #000;
+	--rtBoxShadow: 0px 0px 20px 2px #000;
 	--rtTextColor: #bbb;
 	--rtFont: Verdana;
 	--rtSideBarWidth: 300px;
@@ -16,6 +16,14 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: var(--rtFont);
+	-ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+    width: 0px;
+	background: transparent;
+	display: none;
 }
 
 .rtBody {
@@ -38,7 +46,9 @@ html, body, .rtBody {
 	position: fixed;
 	width: var(--rtSideBarWidth);
 	height: 100vh;
-	background: var(--rtBackground);
+	background: var(--rtBackgroundo);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
 	border-right: var(--rtOutline);
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -85,7 +95,7 @@ html, body, .rtBody {
 .rtBodyBackground, .rtBodyBackgroundFilterLayer, .rtContent {
 	background-size: cover;
 	position: fixed;
-	left: var(--rtSideBarWidth);
+	left: 0;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -94,20 +104,21 @@ html, body, .rtBody {
 
 .rtBodyBackgroundFilterLayer {
 	background: transparent;
-	/* backdrop-filter: blur(10px); */
-	/* -webkit-backdrop-filter: blur(10px); */
+	left: var(--rtSideBarWidth);
 	z-index: 2;
 	box-shadow: inset var(--rtBoxShadow);
 }
 
 .rtContent {
 	background: transparent;
+	left: var(--rtSideBarWidth);
 	z-index: 3;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+	overflow-y: scroll;
 }
 
 .rtBox {
@@ -122,6 +133,10 @@ html, body, .rtBody {
 	-webkit-backdrop-filter: blur(10px);
 	margin: 20px;
 	border-radius: 5px;
+}
+
+.rtBox * {
+	background: transparent;
 }
 
 .rtHr {
