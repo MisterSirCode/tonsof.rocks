@@ -160,3 +160,7 @@ html, body, .rtBody {
 	justify-content: center;
 	align-items: center;
 }
+
+.rtLinkBoxIcon {
+	height: 32px;
+}
