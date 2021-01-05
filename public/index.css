@@ -81,7 +81,7 @@ html, body, .rtBody {
 	margin-bottom: calc(1em / 3 - 32px);
 }
 
-.rtBodyBackground, .rtBodyBackgroundFilterLayer {
+.rtBodyBackground, .rtBodyBackgroundFilterLayer, .rtContent {
 	background-size: cover;
 	position: fixed;
 	left: var(--rtSideBarWidth);
@@ -96,4 +96,31 @@ html, body, .rtBody {
 	backdrop-filter: blur(10px);
 	z-index: 2;
 	box-shadow: inset var(--rtBoxShadow);
+}
+
+.rtContent {
+	background: transparent;
+	z-index: 3;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.rtBox {
+	color: var(--rtTextColor);
+	max-width: 300px;
+	width: auto;
+	height: auto;
+	padding: 20px;
+	background: var(--rtBackground);
+	box-shadow: var(--rtBoxShadow);
+	margin: 20px;
+}
+
+.rtHr {
+	margin: 20px;
+	margin-left: 0;
+	margin-right: 0;
 }
