@@ -6,7 +6,7 @@
 	--rtOutlineColor: #555;
 	--rtOutline: 0px solid var(--rtOutlineColor);
 	--rtBoxShadow: 0px 0px 20px 2px #000;
-	--rtTextColor: #bbb;
+	--rtTextColor: #ccc;
 	--rtFont: Verdana;
 	--rtSideBarWidth: 300px;
 }
@@ -24,6 +24,12 @@
     width: 0px;
 	background: transparent;
 	display: none;
+}
+
+.rtPixelImg {
+	image-rendering: pixelated;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: crisp-edges;
 }
 
 .rtBody {
@@ -133,6 +139,7 @@ html, body, .rtBody {
 	-webkit-backdrop-filter: blur(10px);
 	margin: 20px;
 	border-radius: 5px;
+	overflow: hidden;
 }
 
 .rtBox * {
@@ -143,4 +150,13 @@ html, body, .rtBody {
 	margin: 20px;
 	margin-left: 0;
 	margin-right: 0;
+}
+
+.rtLinkBox {
+	padding-top: 20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }

@@ -45,13 +45,6 @@
             background-image: url(../../Images/MountainsHighRes.png);
         }
 
-        .projectIcon {
-            width: 256px;
-            height: 256px;
-            margin-top: 20px;
-            margin-left: calc(50% - 128px);
-        }
-
         .iosAppRound {
             border-radius: 0;
             border: 0;
@@ -62,7 +55,33 @@
         }
 
         .projectLink {
-            
+            padding: 20px;
+            background: rgb(17, 17, 17);
+            position: relative;
+            margin: -20px;
+            margin-bottom: 20px;
+            background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, rgba(17, 17, 17, 1) 63px);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+
+        /* Project Icons */
+
+        .projectDeepworld {
+            background: rgb(17, 17, 17);
+            background: url(../../Images/Projects/DeepworldRemastered.png);
+        }
+
+        .projectIcon {
+            padding: 20px;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right;
         }
     </style>
 </head>
@@ -73,12 +92,20 @@
         <div class="rtBodyBackgroundFilterLayer"></div>
         <div class="rtContent">
             <div class="rtBox">
-                <a href="https://deepworld.web.app/" class="projectLink">
+                <div class="projectIcon projectDeepworld">
+                    <h3> </h3>
+                </div>
+                <div class="projectLink">
                     <h3>Deepworld Remastered</h3>
-                </a>
-                <hr class="rtHr">
-                Deepworld Remastered is a 2D MMORPG based on the Massively-Multiplayer game "Deepworld" created by Bytebin Studios which was shutdown in August of 2019
+                </div>
+                Deepworld Remastered is a 2D MMORPG based on the Massively-Multiplayer game "Deepworld" created by
+                Bytebin Studios which was shutdown in August of 2019
                 <br>
+                <div class="rtLinkBox">
+                    <a href="https://gamejolt.com/games/dwre/512179">
+                        <img src="../../Images/Platforms/GameJoltIcon.png" alt="" class="rtLinkBoxIcon rtPixelImg">
+                    </a>
+                </div>
             </div>
         </div>
     </div>
