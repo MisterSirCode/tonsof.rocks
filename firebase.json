@@ -7,14 +7,17 @@
       "**/node_modules/**"
     ],
     "rewrites": [{
-      "source": "/portfolio**",
-      "destination": "/Pages/portfolio.html"
-    }, {
       "source": "/projects**",
       "destination": "/Pages/projects.html"
     }, {
+      "source": "/portfolio**",
+      "destination": "/Pages/portfolio.html"
+    }, {
       "source": "/contact**",
       "destination": "/Pages/contact.html"
+    }, {
+      "source": "/websites**",
+      "destination": "/Pages/websites.html"
     }]
   }
 }

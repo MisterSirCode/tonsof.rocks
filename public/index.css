@@ -1,0 +1,99 @@
+:root {
+	--rtBackground: #111;
+	--rtBackground2: #222;
+	--rtBackground3: #333;
+	--rtOutlineColor: #333;
+	--rtOutline: 0px solid var(--rtOutlineColor);
+	--rtBoxShadow: 0px 0px 20px 3px #000;
+	--rtTextColor: #bbb;
+	--rtFont: Verdana;
+	--rtSideBarWidth: 300px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: var(--rtFont);
+}
+
+.rtBody {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+html, body, .rtBody {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	background: var(--rtBackground);
+}
+
+.rtSideBar {
+	display: flex;
+	position: fixed;
+	width: var(--rtSideBarWidth);
+	height: 100vh;
+	background: var(--rtBackground);
+	border-right: var(--rtOutline);
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	z-index: 3;
+}
+
+.rtSideBar * {
+	user-select: none;
+}
+
+.rtHeader {
+	text-align: center;
+	color: var(--rtTextColor);
+	font-size: 1.3em;
+	font-weight: bolder;
+	margin: 20px;
+}
+
+.rtLink {
+	display: inline;
+	font-size: 0.9em;
+	color: var(--rtTextColor);
+	margin: 1em;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.rtLink.rtCurLink {
+	pointer-events: none;
+	filter: brightness(110%);
+	font-weight: bold;
+	cursor: default;
+	background: var(--rtBackground2);
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.rtLogoHeaderLogo {
+	margin-bottom: calc(1em / 3 - 32px);
+}
+
+.rtBodyBackground, .rtBodyBackgroundFilterLayer {
+	background-size: cover;
+	position: fixed;
+	left: var(--rtSideBarWidth);
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+}
+
+.rtBodyBackgroundFilterLayer {
+	background: transparent;
+	backdrop-filter: blur(10px);
+	z-index: 2;
+	box-shadow: inset var(--rtBoxShadow);
+}
