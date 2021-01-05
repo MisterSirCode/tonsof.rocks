@@ -1,5 +1,6 @@
 :root {
 	--rtBackground: #111;
+	--rtBackgroundo: rgba(17, 17, 17, 0.5);
 	--rtBackground2: #222;
 	--rtBackground3: #333;
 	--rtOutlineColor: #333;
@@ -93,7 +94,8 @@ html, body, .rtBody {
 
 .rtBodyBackgroundFilterLayer {
 	background: transparent;
-	backdrop-filter: blur(10px);
+	/* backdrop-filter: blur(10px); */
+	/* -webkit-backdrop-filter: blur(10px); */
 	z-index: 2;
 	box-shadow: inset var(--rtBoxShadow);
 }
@@ -110,13 +112,16 @@ html, body, .rtBody {
 
 .rtBox {
 	color: var(--rtTextColor);
-	max-width: 300px;
+	max-width: 400px;
 	width: auto;
 	height: auto;
 	padding: 20px;
-	background: var(--rtBackground);
+	background: var(--rtBackgroundo);
 	box-shadow: var(--rtBoxShadow);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
 	margin: 20px;
+	border-radius: 5px;
 }
 
 .rtHr {

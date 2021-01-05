@@ -8,16 +8,16 @@
     ],
     "rewrites": [{
       "source": "/projects**",
-      "destination": "/Pages/projects.html"
+      "destination": "/Pages/Projects/index.html"
     }, {
       "source": "/portfolio**",
-      "destination": "/Pages/portfolio.html"
+      "destination": "/Pages/Portfolio/index.html"
     }, {
       "source": "/contact**",
-      "destination": "/Pages/contact.html"
+      "destination": "/Pages/Contact/index.html"
     }, {
       "source": "/websites**",
-      "destination": "/Pages/websites.html"
+      "destination": "/Pages/Websites/index.html"
     }]
   }
 }
