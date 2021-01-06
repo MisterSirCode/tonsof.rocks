@@ -83,8 +83,8 @@ html, body, .rtBody {
 	margin: 1em;
 	cursor: pointer;
 	text-decoration: none;
-	transition: 0.3s;
 	padding: 5px;
+	border-radius: 5px;
 }
 
 .rtLink.rtCurLink {
@@ -93,7 +93,6 @@ html, body, .rtBody {
 	font-weight: bold;
 	cursor: default;
 	background: var(--rtBackgroundo);
-	border-radius: 5px;
 }
 
 .rtLink:hover {
