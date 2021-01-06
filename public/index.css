@@ -17,7 +17,8 @@
 	box-sizing: border-box;
 	font-family: var(--rtFont);
 	-ms-overflow-style: none;
-    scrollbar-width: none;
+	scrollbar-width: none;
+	color: inherit;
 }
 
 *::-webkit-scrollbar {
@@ -82,6 +83,8 @@ html, body, .rtBody {
 	margin: 1em;
 	cursor: pointer;
 	text-decoration: none;
+	transition: 0.3s;
+	padding: 5px;
 }
 
 .rtLink.rtCurLink {
@@ -89,9 +92,13 @@ html, body, .rtBody {
 	filter: brightness(110%);
 	font-weight: bold;
 	cursor: default;
-	background: var(--rtBackground2);
+	background: var(--rtBackgroundo);
 	border-radius: 5px;
-	padding: 5px;
+}
+
+.rtLink:hover {
+	background: var(--rtBackgroundo);
+	filter: brightness(110%);
 }
 
 .rtLogoHeaderLogo {
@@ -120,9 +127,9 @@ html, body, .rtBody {
 	left: var(--rtSideBarWidth);
 	z-index: 3;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: center;
 	overflow-y: scroll;
 }
