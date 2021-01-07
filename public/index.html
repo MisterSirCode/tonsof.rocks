@@ -69,24 +69,28 @@
         <a class="rtLink" href="./websites">Websites</a>
     </div>
     <div class="rtAccount">
-        <img src="" alt="" class="rtAccountImage">
+        <img src="https://mistersircode.com/defaultUser" alt="" class="rtAccountImage">
     </div>
     <div class="rtAccountModal">
         <div class="rtProfile signUp curProfile">
-            Sign Up or Log In
+            Login or Create an Account
             <hr class="rtHr">
             <span class="rtTinyText">Email</span><br>
             <input type="email" class="rtTextInput emailInput" placeholder="example@example.com" autocomplete="username">
             <hr class="rtSmallSpace">
             <span class="rtTinyText">Password</span><br>
             <input type="password" class="rtTextInput passwordInput" placeholder="password" autocomplete="current-password" maxlength="10"><br><input type="text" class="rtTextInput passwordInputText"></input><br>
-            <button class="rtButton logInButton">Log In</button><button class="rtButton signUpButton">Sign Up</button>
+            <button class="rtButton logInButton">Login</button> <button class="rtButton signUpButton">Signup</button>
         </div>
         <div class="rtProfile loggedIn">
             <div class="rtProfileUsername"></div>
             <div class="rtProfileEmail">example@email.com</div>
             <hr class="rtHr">
-            <button class="rtButton logOutButton">Log Out</button>
+            <input type="url" pattern="https://.*" class="rtTextInput profilePictureLink" placeholder="Image Link Here">
+            <hr class="rtSmallSpace">
+            <button class="rtButton updateProfileImgButton">Update Profile Picture</button>
+            <hr class="rtHr">
+            <button class="rtButton logOutButton">Logout</button>
         </div>
     </div>
 </body>

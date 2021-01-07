@@ -176,8 +176,12 @@ html, body, .rtBody {
 	position: fixed;
 	top: 25px;
 	right: 25px;
-	background: var(--rtBackground);
+	background: var(--rtBackgroundo);
+	box-shadow: var(--rtBoxShadow);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
 	border-radius: 100%;
+	overflow: hidden;
 }
 
 .rtAccountModal {
@@ -230,9 +234,20 @@ hr.rtSmallSpace {
 	border: 0;
 	border-radius: 5px;
 }
+.rtAccountImage {
+	background: transparent;
+	border-radius: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	width: 50px;
+	height: 50px;
+}
 
 .rtProfileUsername {
-	
+
 }
 
 .rtProfileEmail {

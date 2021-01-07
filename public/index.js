@@ -13,8 +13,6 @@ accountModal.addEventListener("click", () => {
     }
 });
 
-accountModal.click();
-
 document.querySelector(".passwordInput").addEventListener("input", (e) => {
     document.querySelector(".passwordInputText").value = e.target.value;
 });
@@ -23,36 +21,54 @@ document.querySelector(".signUpButton").addEventListener("click", () => {
     const email = document.querySelector(".emailInput").value;
     const password = document.querySelector(".passwordInput").value;
     auth.createUserWithEmailAndPassword(email, password).then((cred) => {
-        currentUser = cred.user;
-        document.querySelector(".rtProfile.signUp.curProfile").classList.remove("curProfile");
-        document.querySelector(".rtProfile.loggedIn").classList.add("curProfile");
-        updateProfile();
+        auth.setPersistence(firebase.auth.Auth.Persistence.LOCAL).then(() => {
+            auth.signInWithEmailAndPassword(email, password).then((cred) => {
+                currentUser = cred.user;
+            });
+        });
     });
 });
 
 document.querySelector(".logInButton").addEventListener("click", () => {
     const email = document.querySelector(".emailInput").value;
     const password = document.querySelector(".passwordInput").value;
-    auth.signInWithEmailAndPassword(email, password).then((cred) => {
-        currentUser = cred.user;
-        document.querySelector(".rtProfile.signUp.curProfile").classList.remove("curProfile");
-        document.querySelector(".rtProfile.loggedIn").classList.add("curProfile");
-        updateProfile();
+    auth.setPersistence(firebase.auth.Auth.Persistence.LOCAL).then(() => {
+        auth.signInWithEmailAndPassword(email, password).then((cred) => {
+            currentUser = cred.user;
+        });
     });
 });
 
 document.querySelector(".logOutButton").addEventListener("click", () => {
-    auth.signOut();
-    currentUser = undefined;
-    resetProfile();
+    auth.signOut().then(() => {
+        currentUser = undefined;
+    });
+});
+
+document.querySelector(".updateProfileImgButton").addEventListener("click", () => {
+    auth.currentUser.updateProfile({
+        photoURL: document.querySelector(".profilePictureLink").value
+    });
+    updateProfile();
+});
+
+auth.onAuthStateChanged((user) => {
+    if (user) {
+        currentUser = user;
+        updateProfile();
+    } else resetProfile();
 });
 
 function updateProfile() {
+    document.querySelector(".rtProfile.signUp.curProfile").classList.remove("curProfile");
+    document.querySelector(".rtProfile.loggedIn").classList.add("curProfile");
     document.querySelector(".rtProfileEmail").innerText = currentUser.email;
     if (currentUser.photoURL) document.querySelector(".rtAccountImage").src = currentUser.photoURL;
 }
 
 function resetProfile() {
+    document.querySelector(".rtProfile.signUp").classList.add("curProfile");
+    document.querySelector(".rtProfile.loggedIn.curProfile").classList.remove("curProfile");
     document.querySelector(".rtProfileEmail").innerText = currentUser.email;
     if (currentUser.photoURL) document.querySelector(".rtAccountImage").src = 'https://mistersircode.com/defaultUser';
 }
