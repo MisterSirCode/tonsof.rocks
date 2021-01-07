@@ -19,7 +19,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./Icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./Icons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./Icons/favicon-16x16.png">
-    <link rel="manifest" href="./Icons/manifest.json">
 
     <!-- Primary Meta Tags -->
     <meta name="title" content="MisterSirCode's Homepage">
@@ -69,8 +68,47 @@
         <a class="rtLink" href="./contact">Contact</a>
         <a class="rtLink" href="./websites">Websites</a>
     </div>
+    <div class="rtAccount">
+        <img src="" alt="" class="rtAccountImage">
+    </div>
+    <div class="rtAccountModal">
+        <div class="rtProfile signUp curProfile">
+            Sign Up or Log In
+            <hr class="rtHr">
+            <span class="rtTinyText">Email</span><br>
+            <input type="email" class="rtTextInput emailInput" placeholder="example@example.com" autocomplete="username">
+            <hr class="rtSmallSpace">
+            <span class="rtTinyText">Password</span><br>
+            <input type="password" class="rtTextInput passwordInput" placeholder="password" autocomplete="current-password" maxlength="10"><br><input type="text" class="rtTextInput passwordInputText"></input><br>
+            <button class="rtButton logInButton">Log In</button><button class="rtButton signUpButton">Sign Up</button>
+        </div>
+        <div class="rtProfile loggedIn">
+            <div class="rtProfileUsername"></div>
+            <div class="rtProfileEmail">example@email.com</div>
+            <hr class="rtHr">
+            <button class="rtButton logOutButton">Log Out</button>
+        </div>
+    </div>
 </body>
 
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+<script>
+    var firebaseConfig = {
+        apiKey: "AIzaSyBvbd-ipxnmHpycHNd4JzUSJATPZpir8sI",
+        authDomain: "mistersircode.firebaseapp.com",
+        databaseURL: "https://mistersircode.firebaseio.com",
+        projectId: "mistersircode",
+        appId: "1:1041637727587:web:3e2219f5b831529532c756"
+    };
+    firebase.initializeApp(firebaseConfig);
+
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+
+    db.settings({ timestampsInSnapshots: true });
+</script>
 <script src="./index.js"></script>
 
 </html>

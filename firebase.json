@@ -18,6 +18,9 @@
     }, {
       "source": "/websites**",
       "destination": "/Pages/Websites/index.html"
+    }, {
+      "source": "/defaultUser**",
+      "destination": "/Icons/user.svg"
     }]
   }
 }
