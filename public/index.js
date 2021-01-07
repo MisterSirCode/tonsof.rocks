@@ -1,6 +1,7 @@
 const accountModal = document.querySelector(".rtAccount");
 let acntOpen = false;
 let currentUser;
+let currentUserDB;
 
 accountModal.addEventListener("click", () => {
     acntOpen = !acntOpen;
@@ -21,6 +22,10 @@ document.querySelector(".signUpButton").addEventListener("click", () => {
     const email = document.querySelector(".emailInput").value;
     const password = document.querySelector(".passwordInput").value;
     auth.createUserWithEmailAndPassword(email, password).then((cred) => {
+        db.collection("users").add({
+            userId: cred.user.uid,
+            userRole: "basic"
+        });
         auth.setPersistence(firebase.auth.Auth.Persistence.LOCAL).then(() => {
             auth.signInWithEmailAndPassword(email, password).then((cred) => {
                 currentUser = cred.user;
@@ -54,6 +59,11 @@ document.querySelector(".updateProfileImgButton").addEventListener("click", () =
 
 auth.onAuthStateChanged((user) => {
     if (user) {
+        db.collection("users").get().then((snapshot) => {
+            currentUserDB = snapshot.docs;
+        });
+    }
+    if (user) {
         currentUser = user;
         updateProfile();
     } else resetProfile();
@@ -64,6 +74,9 @@ function updateProfile() {
     document.querySelector(".rtProfile.loggedIn").classList.add("curProfile");
     document.querySelector(".rtProfileEmail").innerText = currentUser.email;
     if (currentUser.photoURL) document.querySelector(".rtAccountImage").src = currentUser.photoURL;
+    if (currentUserDB) {
+        console.log(currentUserDB[currentUser.uid]);
+    }
 }
 
 function resetProfile() {
