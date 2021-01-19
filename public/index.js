@@ -1,5 +1,5 @@
 const accountModal = document.querySelector(".rtAccount");
-const restAPIKey = "ODAwODQ1NzYyOTA0MDY0MDQx.YAYDvA.U9x8aOi8youXXWGj4rvmQSaG6sg";
+const restAPIKey = "T0RBd09EUTFOell5T1RBME1EWTBNRFF4LllBWUR2QS54LW0xYzVSN2szejNIdFc1RzFuanZDX25EWFU=";
 let acntOpen = false;
 let currentUser;
 let currentUserDB;
@@ -106,7 +106,7 @@ function updateProfile() {
                 document.querySelector(".rtAccountImage").src = `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png?size=128`;
             });
             picReq.open("GET", "https://discordapp.com/api/users/" + currentUserDB.userIdDiscord);
-            picReq.setRequestHeader("Authorization", restAPIKey);
+            picReq.setRequestHeader("Authorization", atob(restAPIKey));
             picReq.send();
         }
     }
