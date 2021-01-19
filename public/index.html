@@ -75,18 +75,18 @@
         <div class="rtProfile signUp curProfile">
             Login or Create an Account
             <hr class="rtHr">
-            <span class="rtTinyText">Username</span><br>
-            <input type="text" name="username" class="rtTextInput usernameInput" placeholder="" autocomplete="off" maxlength="20">
-            <hr class="rtSmallSpace">
             <span class="rtTinyText">Email</span><br>
-            <input type="email" name="email" class="rtTextInput emailInput" placeholder="example@example.com" autocomplete="username">
+            <input type="email" class="rtTextInput emailInput" placeholder="example@example.com"
+                autocomplete="username">
             <hr class="rtSmallSpace">
             <span class="rtTinyText">Password</span><br>
-            <input type="password" name="password" class="rtTextInput passwordInput" placeholder="password" autocomplete="current-password" maxlength="20"><br><input type="text" class="rtTextInput passwordInputText"></input><br>
+            <input type="password" class="rtTextInput passwordInput" placeholder="password"
+                autocomplete="current-password" maxlength="10"><br><input type="text"
+                class="rtTextInput passwordInputText"></input><br>
             <button class="rtButton logInButton">Login</button> <button class="rtButton signUpButton">Signup</button>
         </div>
         <div class="rtProfile loggedIn">
-            <div class="rtProfileUsername">Empty.User</div>
+            <div class="rtProfileUsername"></div>
             <div class="rtProfileEmail">example@email.com</div>
             <hr class="rtHr">
             <input type="url" pattern="https://.*" class="rtTextInput profilePictureLink" placeholder="Image Link Here">
@@ -114,7 +114,9 @@
     const auth = firebase.auth();
     const db = firebase.firestore();
 
-    db.settings({ timestampsInSnapshots: true });
+    db.settings({
+        timestampsInSnapshots: true
+    });
 </script>
 <script src="./index.js"></script>
 

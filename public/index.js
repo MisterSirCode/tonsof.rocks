@@ -1,5 +1,4 @@
 const accountModal = document.querySelector(".rtAccount");
-const restAPIKey = "T0RBd09EUTFOell5T1RBME1EWTBNRFF4LllBWUR2QS54LW0xYzVSN2szejNIdFc1RzFuanZDX25EWFU=";
 let acntOpen = false;
 let currentUser;
 let currentUserDB;
@@ -20,41 +19,19 @@ document.querySelector(".passwordInput").addEventListener("input", (e) => {
 });
 
 document.querySelector(".signUpButton").addEventListener("click", () => {
-    const username = document.querySelector(".usernameInput").value;
     const email = document.querySelector(".emailInput").value;
     const password = document.querySelector(".passwordInput").value;
-    try {
-        if (!username || username.length >= 21 || username.length <= 1) {
-            alert("Invalid Username\nMust be between 2 and 20 characters");
-            return;
-        } else {
-            db.collection("users").get().then(querySnapshot => {
-                querySnapshot.docs.forEach((userObj) => {
-                    const userData = userObj.data();
-                    if (username == userData.userName) {
-                        alert("Username already exists")
-                        return Promise.reject("end");
-                    }
-                });
-            }).then(() => {
-                console.log("test");
-                auth.createUserWithEmailAndPassword(email, password).then((cred) => {
-                    db.collection("users").doc(cred.user.uid).set({
-                        userId: cred.user.uid,
-                        userRole: "basic",
-                        userName: username
-                    })
-                    auth.setPersistence(firebase.auth.Auth.Persistence.LOCAL).then(() => {
-                        auth.signInWithEmailAndPassword(email, password).then((cred) => {
-                            currentUser = cred.user;
-                        });
-                    });
-                });
-            })
-        }
-    } catch (e) {
-        console.log(e);
-    }
+    auth.createUserWithEmailAndPassword(email, password).then((cred) => {
+        db.collection("users").add({
+            userId: cred.user.uid,
+            userRole: "basic"
+        });
+        auth.setPersistence(firebase.auth.Auth.Persistence.LOCAL).then(() => {
+            auth.signInWithEmailAndPassword(email, password).then((cred) => {
+                currentUser = cred.user;
+            });
+        });
+    });
 });
 
 document.querySelector(".logInButton").addEventListener("click", () => {
@@ -77,13 +54,13 @@ document.querySelector(".updateProfileImgButton").addEventListener("click", () =
     auth.currentUser.updateProfile({
         photoURL: document.querySelector(".profilePictureLink").value
     });
-    window.location.href = window.location.href;
+    updateProfile();
 });
 
 auth.onAuthStateChanged((user) => {
     if (user) {
-        db.collection("users").doc(user.uid).get().then((doc) => {
-            currentUserDB = doc.data();
+        db.collection("users").get().then((snapshot) => {
+            currentUserDB = snapshot.docs;
         });
     }
     if (user) {
@@ -93,30 +70,18 @@ auth.onAuthStateChanged((user) => {
 });
 
 function updateProfile() {
-    document.querySelector(".rtProfile.signUp").classList.remove("curProfile");
+    document.querySelector(".rtProfile.signUp.curProfile").classList.remove("curProfile");
     document.querySelector(".rtProfile.loggedIn").classList.add("curProfile");
-    document.querySelector(".rtProfileUsername").innerText = currentUserDB.userName;
     document.querySelector(".rtProfileEmail").innerText = currentUser.email;
     if (currentUser.photoURL) document.querySelector(".rtAccountImage").src = currentUser.photoURL;
-    else {
-        if (currentUser.userIdDiscord) {
-            var picReq = new XMLHttpRequest();
-            picReq.addEventListener("load", (responseText) => {
-                const user = JSON.parse(responseText);
-                document.querySelector(".rtAccountImage").src = `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png?size=128`;
-            });
-            picReq.open("GET", "https://discordapp.com/api/users/" + currentUserDB.userIdDiscord);
-            picReq.setRequestHeader("Authorization", atob(restAPIKey));
-            picReq.send();
-        }
+    if (currentUserDB) {
+        console.log(currentUserDB[currentUser.uid]);
     }
 }
 
 function resetProfile() {
-    if (currentUser) {
-        document.querySelector(".rtProfile.signUp").classList.add("curProfile");
-        document.querySelector(".rtProfile.loggedIn").classList.remove("curProfile");
-        document.querySelector(".rtProfileEmail").innerText = currentUser.email;
-        if (currentUser.photoURL) document.querySelector(".rtAccountImage").src = 'https://mistersircode.com/defaultUser';
-    }
+    document.querySelector(".rtProfile.signUp").classList.add("curProfile");
+    document.querySelector(".rtProfile.loggedIn.curProfile").classList.remove("curProfile");
+    document.querySelector(".rtProfileEmail").innerText = currentUser.email;
+    if (currentUser.photoURL) document.querySelector(".rtAccountImage").src = 'https://mistersircode.com/defaultUser';
 }
