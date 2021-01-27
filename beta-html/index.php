@@ -63,8 +63,9 @@
   </header>
   <div class="websiteContent">
     <div class="itemBox">
-      <h1>SirCode's Homepage</h1>
+      <h1>SirCode's Homepage. PHP Loading Test: <?php echo "true"; ?></h1>
       <h3>Location of my Portfolio and Projects</h3>
+      
     </div>
     <br>
     <div class="itemBox">
