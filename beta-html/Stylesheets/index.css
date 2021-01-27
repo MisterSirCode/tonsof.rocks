@@ -31,7 +31,7 @@ body * {
 
 .header {
     background-color: rgb(255, 255, 255);
-    background-image: url(../Images/wave720.jpg);
+    background-image: url(../Images/twilight845.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -58,7 +58,7 @@ body * {
 .description {
     left: 50%;
     position: absolute;
-    top: 45%;
+    top: 50%;
     transform: translate(-50%, -55%);
     text-align: center;
     text-shadow: 2px 2px 7px rgba(0, 0, 0, 1);

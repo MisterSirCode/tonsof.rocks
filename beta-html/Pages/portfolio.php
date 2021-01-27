@@ -59,10 +59,10 @@
 					<a class="nav-link" href="">Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="./Pages/projects.php">Projects</a>
+					<a class="nav-link" href="./projects">Projects</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="./Pages/portfolio.php">Portfolio</a>
+					<a class="nav-link" href="./contact">Portfolio</a>
 				</li>
 			</ul>
 		</div>
@@ -70,12 +70,39 @@
 	<header class="page-header header container-fluid">
 		<div class="overlay"></div>
 		<div class="description">
-			<h1>Welcome to Mister SirCode's Homepage</h1>
-			<p>This is a Portfiolio Site that I use to store and archive my Projects, Art, and other such things</p>
+			<h1>SirCode's Portfolio</h1>
+			<p>Things I know, have Accomplished, or am Currently working on</p>
 			<br>
 			<h6>Background Arts by <a href="https://www.pexels.com/@earano">Emiliano Arano</a></h6>
 		</div>
 	</header>
+	<div class="container features">
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<h3 class="feature-title">Lorem ipsum</h3>
+				<img src="images/column-1.jpg" class="img-fluid">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<h3 class="feature-title">Lorem ipsum</h3>
+				<img src="images/column-2.jpg" class="img-fluid">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">	
+				<h3 class="feature-title">Get in Touch!</h3>
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Name" name="">
+				</div>
+				<div class="form-group">
+					<input type="email" class="form-control" placeholder="Email Address" name="email">
+				</div>
+				<div class="form-group">
+					<textarea class="form-control" rows="4"></textarea>
+				</div>
+				<input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
+			</div>
+		</div> 
+	</div>
 	<footer class="page-footer">
 		<div class="footer-copyright text-center">Copyright © 2021</div>
 		<div class="footer-copyright text-center">Owned and Distributed by Taylor Schneider</div>
