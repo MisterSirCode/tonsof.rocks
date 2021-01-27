@@ -39,13 +39,16 @@
 	<meta property="twitter:image" content="https://mistersircode.web.app/Images/SCLOGOSmall.png">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
 		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<style>
+
+	</style>
 	<link rel="stylesheet" href="./Stylesheets/index.css">
 </head>
 
 <body>
 	<nav class="navbar navbar-expand-md">
 		<a class="navbar-brand" href="/">
-			<img src="" alt="">
+			<img src="./Images/SCLOGOSmall.png" alt="" height="30px">
 		</a>
 		<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -56,10 +59,10 @@
 					<a class="nav-link" href="">Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="./about">About</a>
+					<a class="nav-link" href="./projects">Projects</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="./contact">Contact</a>
+					<a class="nav-link" href="./contact">Portfolio</a>
 				</li>
 			</ul>
 		</div>
@@ -69,8 +72,14 @@
 		<div class="description">
 			<h1>Welcome to Mister SirCode's Homepage</h1>
 			<p>This is a Portfiolio Site that I use to store and archive my Projects, Art, and other such things</p>
+			<br>
+			<h6>Background Arts by <a href="https://www.pexels.com/@earano">Emiliano Arano</a></h6>
 		</div>
 	</header>
+	<footer class="page-footer">
+		<div class="footer-copyright text-center">Copyright © 2021</div>
+		<div class="footer-copyright text-center">Owned and Distributed by Taylor Schneider</div>
+	</footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">

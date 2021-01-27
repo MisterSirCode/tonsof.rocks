@@ -17,6 +17,5 @@ Options All -Indexes
 
 //Rewrite URLs
 RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteRule ^Pages/(.*)$ /$1 [R=301,NC]
  
