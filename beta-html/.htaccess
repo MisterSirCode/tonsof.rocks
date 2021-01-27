@@ -1,0 +1,22 @@
+//Caching schema
+<FilesMatch "\.(jpg|png|ico|svg)$">
+Header set Cache-Control "public, max-age=3600"
+</FilesMatch>
+
+//Custom 404 errors
+ErrorDocument 404 /404.php
+
+//Prevent viewing of .htaccess file
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+//Prevent directory listings
+Options All -Indexes
+
+//Rewrite URLs
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+ 
