@@ -30,13 +30,13 @@
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="Mister SirCodes Homepage">
 	<meta property="og:description" content="Main website for my Projects and Portfolio">
-	<meta property="og:image" content="https://mistersircode.web.app/Images/SCLOGOSmall.png">
+	<meta property="og:image" content="https://mistersircode.com/Images/SCLOGOSmall.png">
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image">
 	<meta property="twitter:title" content="Mister SirCodes Homepage">
 	<meta property="twitter:description" content="Main website for my Projects and Portfolio">
-	<meta property="twitter:image" content="https://mistersircode.web.app/Images/SCLOGOSmall.png">
+	<meta property="twitter:image" content="https://mistersircode.com/Images/SCLOGOSmall.png">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
 		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<style>
@@ -63,6 +63,9 @@
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="./Pages/portfolio.php">Portfolio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./Pages/contact.php">Contact</a>
 				</li>
 			</ul>
 		</div>
