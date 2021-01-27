@@ -72,7 +72,7 @@
 	<header class="page-header header container-fluid">
 		<div class="overlay"></div>
 		<div class="description">
-			<h1>SirCode's Portfolio</h1>
+			<h1>My Portfolio</h1>
 			<p>Things I know, have Accomplished, or am Currently working on</p>
 			<br>
 			<h6>Background Arts by <a href="https://www.pexels.com/@earano">Emiliano Arano</a></h6>

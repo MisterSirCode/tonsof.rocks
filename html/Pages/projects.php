@@ -72,7 +72,7 @@
 	<header class="page-header header container-fluid">
 		<div class="overlay"></div>
 		<div class="description">
-			<h1>Projects</h1>
+			<h1>Current Projects</h1>
 			<p>This page will contain all of my Projects and Creations</p>
 			<br>
 			<h6>Background Arts by <a href="https://www.pexels.com/@earano">Emiliano Arano</a></h6>
