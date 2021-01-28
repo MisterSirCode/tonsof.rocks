@@ -55,16 +55,16 @@
 		<div class="collapse navbar-collapse" id="main-navigation">
 			<ul class="navbar-nav">
 				<li class="nav-item">
-					<a class="nav-link" href="./">Home</a>
+					<a class="nav-link" href="../">Home</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="">Projects</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="./portfolio">Portfolio</a>
+					<a class="nav-link" href="../portfolio">Portfolio</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="./contact">Contact</a>
+					<a class="nav-link" href="../contact">Contact</a>
 				</li>
 			</ul>
 		</div>
