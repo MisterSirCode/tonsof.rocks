@@ -61,7 +61,7 @@
 					<a class="nav-link" href="../projects">Projects</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="">Portfolio</a>
+					<a class="nav-link">Portfolio</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="../contact">Contact</a>
@@ -75,7 +75,7 @@
 			<h1>My Portfolio</h1>
 			<p>Things I know, have Accomplished, or am Currently working on. Scroll down to take a look</p>
 			<br>
-			<h6>Background Arts by <a href="https://www.pexels.com/@earano">Emiliano Arano</a></h6>
+			<h6>Background Art by <a href="https://www.pexels.com/@earano">Emiliano Arano</a></h6>
 		</div>
 	</header>
 	<div class="container features">
