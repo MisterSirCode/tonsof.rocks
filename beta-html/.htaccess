@@ -1,21 +1,31 @@
-//Caching schema
+# Caching schema
 <FilesMatch "\.(jpg|png|ico|svg)$">
 Header set Cache-Control "public, max-age=3600"
 </FilesMatch>
 
-//Custom 404 errors
+# Custom 404 errors
 ErrorDocument 404 /404.php
 
-//Prevent viewing of .htaccess file
+# Prevent viewing of .htaccess file
 <Files .htaccess>
 order allow,deny
 deny from all
 </Files>
 
-//Prevent directory listings
+# Prevent directory listings
 Options All -Indexes
 
-//Rewrite URLs
 RewriteEngine On
-RewriteRule ^Pages/(.*)$ /$1 [R=301,NC]
+
+# Rewrite "/<filename>" to "/Pages/<filename>.php" if it exists
+RewriteCond %{DOCUMENT_ROOT}/Pages/$0.php -f
+RewriteRule ^[\w-]+$ Pages/$0.php [L]
+
+# Rewrite "/projects/<filename>" to "/projects-dir/Pages/<filename>.php" if it exists
+RewriteCond %{DOCUMENT_ROOT}/projects-dir/Pages/$1.php -f
+RewriteRule ^projects/([\w-]+)$ projects-dir/Pages/$1.php [L]
+
+# Rewrite "https://www.mistersircode.com/..." to "https://mistersircode.com/..." if it exists
+RewriteCond %{HTTP_HOST} ^www\.
+RewriteRule ^(.*)$ http://mistersircode.com/$1 [R=301,L]
  

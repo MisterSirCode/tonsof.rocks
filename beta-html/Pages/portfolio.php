@@ -58,13 +58,13 @@
 					<a class="nav-link" href="../">Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="./projects.php">Projects</a>
+					<a class="nav-link" href="./projects">Projects</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="">Portfolio</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="./contact.php">Contact</a>
+					<a class="nav-link" href="./contact">Contact</a>
 				</li>
 			</ul>
 		</div>
