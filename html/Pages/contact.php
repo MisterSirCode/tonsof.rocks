@@ -64,7 +64,7 @@
 					<a class="nav-link" href="../portfolio">Portfolio</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="">Contact</a>
+					<a class="nav-link">Contact</a>
 				</li>
 			</ul>
 		</div>
@@ -73,9 +73,9 @@
 		<div class="overlay"></div>
 		<div class="description">
 			<h1>Contact Page</h1>
-			<p>Contact info if youre curious about something, or wish to hire me</p>
+			<p>Contact info if you're curious about something, or want to request my services</p>
 			<br>
-			<h6>Background Arts by <a href="https://www.pexels.com/@earano">Emiliano Arano</a></h6>
+			<h6>Background Art by <a href="https://www.pexels.com/@earano">Emiliano Arano</a></h6>
 		</div>
 	</header>
 	<footer class="page-footer">
