@@ -58,13 +58,13 @@
 					<a class="nav-link" href="../">Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="./projects">Projects</a>
+					<a class="nav-link" href="../projects">Projects</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="">Portfolio</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="./contact">Contact</a>
+					<a class="nav-link" href="../contact">Contact</a>
 				</li>
 			</ul>
 		</div>
@@ -73,7 +73,7 @@
 		<div class="overlay"></div>
 		<div class="description">
 			<h1>My Portfolio</h1>
-			<p>Things I know, have Accomplished, or am Currently working on</p>
+			<p>Things I know, have Accomplished, or am Currently working on. Scroll down to take a look</p>
 			<br>
 			<h6>Background Arts by <a href="https://www.pexels.com/@earano">Emiliano Arano</a></h6>
 		</div>
@@ -81,7 +81,7 @@
 	<div class="container features">
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<h3 class="feature-title">Lorem ipsum</h3>
+				<h3 class="feature-title">Skills and Knowledge</h3>
 				<img src="images/column-1.jpg" class="img-fluid">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
 			</div>

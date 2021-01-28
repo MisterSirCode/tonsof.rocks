@@ -78,6 +78,20 @@
 			<h6>Background Arts by <a href="https://www.pexels.com/@earano">Emiliano Arano</a></h6>
 		</div>
 	</header>
+	<div class="container features">
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<h3 class="feature-title">Deepworld Remastered</h3>
+				<img src="../Images/Projects/DeepworldRemastered.png" class="img-fluid">
+				<p>This is a remaster / remake of the massively multiplayer MMO RPG "Deepworld" created by Bytebin Studios</p>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<h3 class="feature-title">Android Arthur</h3>
+				<img src="../images/Projects/AndroidArthur.png" class="img-fluid">
+				<p>This is a high quality Discord Bot that I'm building, it's main focus is working as an interconnected API for my game. However, it also contains many high quality commands and moderation tools useful for any server</p>
+			</div>
+		</div> 
+	</div>
 	<footer class="page-footer">
 		<div class="footer-copyright text-center">Copyright © 2021</div>
 		<div class="footer-copyright text-center">Owned and Distributed by Taylor Schneider</div>
