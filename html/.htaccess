@@ -24,4 +24,8 @@ RewriteRule ^[\w-]+$ Pages/$0.php [L]
 # Rewrite "/projects/<filename>" to "/projects-dir/Pages/<filename>.php" if it exists
 RewriteCond %{DOCUMENT_ROOT}/projects-dir/Pages/$1.php -f
 RewriteRule ^projects/([\w-]+)$ projects-dir/Pages/$1.php [L]
+
+# Rewrite "https://www.mistersircode.com/..." to "https://mistersircode.com/..." if it exists
+RewriteCond %{HTTP_HOST} ^www\.
+RewriteRule ^(.*)$ http://mistersircode.com/$1 [R=301,L]
  
