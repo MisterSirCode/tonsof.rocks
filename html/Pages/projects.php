@@ -92,7 +92,7 @@
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
 				<h3 class="feature-title">Durl Converter</h3>
-				<img src="../Images/Projects/AndroidArthur.png" class="img-fluid">
+				<img src="../Images/Projects/DurlConverter.png" class="img-fluid">
 				<p>Small chrome extension that allows for speedy conversion of Base64 to and from ASCI and DataURLs from Files</p>
 			</div>
 		</div> 
