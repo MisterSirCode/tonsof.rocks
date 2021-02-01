@@ -91,27 +91,27 @@
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
 				<h3 class="feature-title">Mandelbulb</h3>
-				<img src="../Images/Art/Mandelbulb.png" class="img-fluid round">
+				<img src="../Images/Art/Mandelbulb.png" class="img-fluid">
 				<p>This was a 3D Rendered Mandelbrot Fractal. Created using immense complex formulea and subsurface materials I created.</p>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
 				<h3 class="feature-title">The Old Eye</h3>
-				<img src="../Images/Art/EyeSketch.png" class="img-fluid round">
+				<img src="../Images/Art/EyeSketch.png" class="img-fluid">
 				<p>(Copyrighted) One of my more recent sketches. Based off a photo of a human eye socket.</p>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
 				<h3 class="feature-title">HOT</h3>
-				<img src="../Images/Art/Hot.png" class="img-fluid round">
+				<img src="../Images/Art/Hot.png" class="img-fluid">
 				<p>A 3D rendered "Sun" of some sort. It was less of a creation and more of an accident, but I still love the design</p>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
 				<h3 class="feature-title">Coldrock</h3>
-				<img src="../Images/Art/Cold Rock.png" class="img-fluid round">
+				<img src="../Images/Art/Cold Rock.png" class="img-fluid">
 				<p>Coldrock was a small 3D Planet Project to create a fully procedural rocky moon.</p>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
 				<h3 class="feature-title">Deserted</h3>
-				<img src="../Images/Art/Deserted.png" class="img-fluid round">
+				<img src="../Images/Art/Deserted.png" class="img-fluid">
 				<p>This was one of my first attempts at true photo-realism in 3D Art</p>
 			</div>
 		</div> 
