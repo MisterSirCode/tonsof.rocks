@@ -85,14 +85,14 @@
 	<div class="container features">
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<h3 class="feature-title">Deepworld Remastered</h3>
-				<img src="../Images/Projects/DeepworldRemastered.png" class="img-fluid">
-				<p>This is a remaster / remake of the massively multiplayer MMO RPG "Deepworld" created by Bytebin Studios</p>
+				<h3 class="feature-title">Fox Sketch</h3>
+				<img src="../Images/Art/FoxSketch.png" class="img-fluid">
+				<p>(Copyrighted) One of my first Digital Only drawings. Originally based off of a wolf, but adapted into a drawing of a fox.</p>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<h3 class="feature-title">Android Arthur</h3>
-				<img src="../Images/Projects/AndroidArthur.png" class="img-fluid round">
-				<p>This is a high quality Discord Bot that I'm building, it's main focus is working as an interconnected API for my game. However, it also contains many high quality commands and moderation tools useful for any server</p>
+				<h3 class="feature-title">Old Man's Eye</h3>
+				<img src="../Images/Art/EyeSketch.png" class="img-fluid round">
+				<p>(Copyrighted) One of my more recent sketches. Based off a photo of a human eye socket.</p>
 			</div>
 		</div> 
 	</div>
