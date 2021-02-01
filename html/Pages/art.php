@@ -72,8 +72,9 @@
 	<header class="page-header header container-fluid">
 		<div class="overlay"></div>
 		<div class="description">
-			<h1>Current Projects</h1>
-			<p>This page will contain all of my Projects and Creations</p>
+			<h1>Art and Models</h1>
+			<p>Renders, drawings, 3D models, and other miscellaneous art I've created.<br>
+				Scroll down for more information</p>
 			<br>
 			<h6>Background Arts by <a href="https://www.pexels.com/@earano">Emiliano Arano</a></h6>
 		</div>

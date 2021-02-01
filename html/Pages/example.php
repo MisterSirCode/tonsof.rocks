@@ -73,7 +73,7 @@
 		<div class="overlay"></div>
 		<div class="description">
 			<h1>Example Page</h1>
-			<p>Example Page with no content. Nothing to see here</p>
+			<p>Example Page with no content. Nothing to see here.</p>
 			<br>
 			<h6>Background Art by <a href="https://www.pexels.com/@earano">Emiliano Arano</a></h6>
 		</div>

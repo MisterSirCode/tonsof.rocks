@@ -73,7 +73,7 @@
 		<div class="overlay"></div>
 		<div class="description">
 			<h1>My Portfolio</h1>
-			<p>Things I know, have Accomplished, or am Currently working on<br>
+			<p>Things I know, have accomplished, or am currently working on.<br>
 				Scroll down for more information</p>
 			<br>
 			<h6>Background Art by <a href="https://www.pexels.com/@earano">Emiliano Arano</a></h6>
