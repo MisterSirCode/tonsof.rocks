@@ -94,6 +94,11 @@
 				<img src="../Images/Art/EyeSketch.png" class="img-fluid round">
 				<p>(Copyrighted) One of my more recent sketches. Based off a photo of a human eye socket.</p>
 			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<h3 class="feature-title">Old Man's Eye</h3>
+				<img src="../Images/Art/EyeSketch.png" class="img-fluid round">
+				<p>(Copyrighted) One of my more recent sketches. Based off a photo of a human eye socket.</p>
+			</div>
 		</div> 
 	</div>
 	<footer class="page-footer">
