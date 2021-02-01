@@ -95,12 +95,12 @@
 				<p>This was a 3D Rendered Mandelbrot Fractal. Created using immense complex formulea and subsurface materials I created.</p>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<h3 class="feature-title">Old Man's Eye</h3>
+				<h3 class="feature-title">The Old Eye</h3>
 				<img src="../Images/Art/EyeSketch.png" class="img-fluid round">
 				<p>(Copyrighted) One of my more recent sketches. Based off a photo of a human eye socket.</p>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<h3 class="feature-title">HOT!</h3>
+				<h3 class="feature-title">HOT</h3>
 				<img src="../Images/Art/Hot.png" class="img-fluid round">
 				<p>A 3D rendered "Sun" of some sort. It was less of a creation and more of an accident, but I still love the design</p>
 			</div>
