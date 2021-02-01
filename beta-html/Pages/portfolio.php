@@ -20,20 +20,20 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="../Icons/favicon-16x16.png">
 
 	<!-- Primary Meta Tags -->
-	<title>SirCodes Homepage</title>
-	<meta name="title" content="Mister SirCodes Homepage">
+	<title>SirCodes Portfolio</title>
+	<meta name="title" content="SirCodes Portfolio">
 	<meta name="description" content="Main website for my Projects and Portfolio">
 	<meta name="theme-color" content="#ffffff">
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="Mister SirCodes Homepage">
+	<meta property="og:title" content="SirCodes Portfolio">
 	<meta property="og:description" content="Main website for my Projects and Portfolio">
 	<meta property="og:image" content="https://mistersircode.com/Images/SCLOGOSmall.png">
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image">
-	<meta property="twitter:title" content="Mister SirCodes Homepage">
+	<meta property="twitter:title" content="SirCodes Portfolio">
 	<meta property="twitter:description" content="Main website for my Projects and Portfolio">
 	<meta property="twitter:image" content="https://mistersircode.com/Images/SCLOGOSmall.png">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -61,7 +61,7 @@
 					<a class="nav-link" href="../projects">Projects</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="">Portfolio</a>
+					<a class="nav-link">Portfolio</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="../contact">Contact</a>
@@ -73,20 +73,40 @@
 		<div class="overlay"></div>
 		<div class="description">
 			<h1>My Portfolio</h1>
-			<p>Things I know, have Accomplished, or am Currently working on. Scroll down to take a look</p>
+			<p>Things I know, have accomplished, or am currently working on.<br>
+				Scroll down for more information</p>
 			<br>
-			<h6>Background Arts by <a href="https://www.pexels.com/@earano">Emiliano Arano</a></h6>
+			<h6>Background Art by <a href="https://www.pexels.com/@earano">Emiliano Arano</a></h6>
 		</div>
 	</header>
 	<div class="container features">
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<h3 class="feature-title">Skills and Knowledge</h3>
-				<img src="images/column-1.jpg" class="img-fluid">
+				<h3 class="feature-title">Skills and History</h3>
 				<p>
-					I mainly study Javascript and C#. I've been working with HTML / CSS / JS for over 4 years now, and I've taken several free courses on the subjects. As for C#, I've mostly learned through
-					solitary research and self teaching. However, I did take a week long course from IDTech on C# and Unity Game Development. I understand many smaller subjects, such as minor knowledge of C++,
+					I mainly study Javascript and C#. I've been working with HTML / CSS / JS for over 4 years now,
+					and I've taken several free courses on the subjects. As for C#, I've mostly learned through
+					solitary research and self teaching. However, I did take a week long course from IDTech on 
+					C# and Unity Game Development. I understand many smaller subjects, such as minor knowledge of C++,
 					Lua, LuaC, Node.JS (Specifically Discord.JS and Electron.JS), and even a bit a Java.
+				</p>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<h3 class="feature-title">Other Skills and Accomplishments</h3>
+				<p>
+					Besides programming, I've also extensively studied Design and Artistry. I've hand painted and
+					sketched many pieces of high quality art. You can find some of them on the Art page. I've also
+					learned a ton about 3D Modeling, Color, Raytracing, Graphics and things related to 3D Rendering.
+					You can also find a lot of my 3D art on the Art page aswell.
+				</p>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<h3 class="feature-title">Current Biggest Projects</h3>
+				<p>
+					Currently my most anticipated project is easily "Deepworld Remastered", which is a WIP 2D Game
+					based upon the Massively-Multiple MMORPG "Deepworld" created by Bytebin Studios (Jason and Laurence).
+					I'm also currently working on a highly advanced API-Integrated Discord Bot called "Android Arthur V2", which
+					has moderation and community tools to assist in managing Discord Guilds. (Obviously its a big rewrite of its Predecessor)
 				</p>
 			</div>
 		</div> 

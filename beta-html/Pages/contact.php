@@ -20,20 +20,20 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="../Icons/favicon-16x16.png">
 
 	<!-- Primary Meta Tags -->
-	<title>SirCodes Homepage</title>
-	<meta name="title" content="Mister SirCodes Homepage">
+	<title>SirCodes Contacts</title>
+	<meta name="title" content="SirCodes Contacts">
 	<meta name="description" content="Main website for my Projects and Portfolio">
 	<meta name="theme-color" content="#ffffff">
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="Mister SirCodes Homepage">
+	<meta property="og:title" content="SirCodes Contacts">
 	<meta property="og:description" content="Main website for my Projects and Portfolio">
 	<meta property="og:image" content="https://mistersircode.com/Images/SCLOGOSmall.png">
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image">
-	<meta property="twitter:title" content="Mister SirCodes Homepage">
+	<meta property="twitter:title" content="SirCodes Contacts">
 	<meta property="twitter:description" content="Main website for my Projects and Portfolio">
 	<meta property="twitter:image" content="https://mistersircode.com/Images/SCLOGOSmall.png">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -64,7 +64,7 @@
 					<a class="nav-link" href="../portfolio">Portfolio</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="">Contact</a>
+					<a class="nav-link">Contact</a>
 				</li>
 			</ul>
 		</div>
@@ -73,9 +73,10 @@
 		<div class="overlay"></div>
 		<div class="description">
 			<h1>Contact Page</h1>
-			<p>Contact info if youre curious about something, or wish to hire me</p>
+			<p>Contact info if you're curious about something, or want to request my services.<br>
+				Scroll down for more information</p>
 			<br>
-			<h6>Background Arts by <a href="https://www.pexels.com/@earano">Emiliano Arano</a></h6>
+			<h6>Background Art by <a href="https://www.pexels.com/@earano">Emiliano Arano</a></h6>
 		</div>
 	</header>
 	<footer class="page-footer">

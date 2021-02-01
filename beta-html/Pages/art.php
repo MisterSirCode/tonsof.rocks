@@ -4,23 +4,23 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="./Icons/ms-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="57x57" href="./Icons/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="./Icons/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="./Icons/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="./Icons/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="./Icons/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="./Icons/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="./Icons/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="./Icons/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="./Icons/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192" href="./Icons/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="./Icons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="./Icons/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="./Icons/favicon-16x16.png">
+	<meta name="msapplication-TileImage" content="../Icons/ms-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="../Icons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="../Icons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../Icons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="../Icons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../Icons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../Icons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../Icons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../Icons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../Icons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="../Icons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../Icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../Icons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../Icons/favicon-16x16.png">
 
 	<!-- Primary Meta Tags -->
-	<title>SirCodes Homepage</title>
+	<title>SirCodes Art</title>
 	<meta name="title" content="Mister SirCodes Homepage">
 	<meta name="description" content="Main website for my Projects and Portfolio">
 	<meta name="theme-color" content="#ffffff">
@@ -41,13 +41,13 @@
 	<style>
 
 	</style>
-	<link rel="stylesheet" href="./Stylesheets/index.css">
+	<link rel="stylesheet" href="../Stylesheets/index.css">
 </head>
 
 <body>
 	<nav class="navbar navbar-expand-md">
 		<a class="navbar-brand" href="/">
-			<img src="./Images/SCLOGOSmall.png" alt="" height="30px">
+			<img src="../Images/SCLOGOSmall.png" alt="" height="30px">
 		</a>
 		<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -55,16 +55,16 @@
 		<div class="collapse navbar-collapse" id="main-navigation">
 			<ul class="navbar-nav">
 				<li class="nav-item">
-					<a class="nav-link" href="">Home</a>
+					<a class="nav-link" href="../">Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="./projects">Projects</a>
+					<a class="nav-link" href="">Projects</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="./portfolio">Portfolio</a>
+					<a class="nav-link" href="../portfolio">Portfolio</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="./contact">Contact</a>
+					<a class="nav-link" href="../contact">Contact</a>
 				</li>
 			</ul>
 		</div>
@@ -72,12 +72,32 @@
 	<header class="page-header header container-fluid">
 		<div class="overlay"></div>
 		<div class="description">
-			<h1>Welcome to Mister SirCode's Homepage</h1>
-			<p>This is a Portfiolio Site that I use to store and archive my Projects, Art, and other such things</p>
+			<h1>Art and Models</h1>
+			<p>Renders, drawings, 3D models, and other miscellaneous art I've created.<br>
+				Scroll down for more information</p>
 			<br>
 			<h6>Background Arts by <a href="https://www.pexels.com/@earano">Emiliano Arano</a></h6>
 		</div>
 	</header>
+	<div class="container features">
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<h3 class="feature-title">Deepworld Remastered</h3>
+				<img src="../Images/Projects/DeepworldRemastered.png" class="img-fluid">
+				<p>This is a remaster / remake of the massively multiplayer MMO RPG "Deepworld" created by Bytebin Studios</p>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<h3 class="feature-title">Android Arthur</h3>
+				<img src="../Images/Projects/AndroidArthur.png" class="img-fluid">
+				<p>This is a high quality Discord Bot that I'm building, it's main focus is working as an interconnected API for my game. However, it also contains many high quality commands and moderation tools useful for any server</p>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<h3 class="feature-title">Durl Converter</h3>
+				<img src="../Images/Projects/DurlConverter.png" class="img-fluid">
+				<p>Small chrome extension that allows for speedy conversion of Base64 to and from ASCI and DataURLs from Files</p>
+			</div>
+		</div> 
+	</div>
 	<footer class="page-footer">
 		<div class="footer-copyright text-center">Copyright © 2021</div>
 		<div class="footer-copyright text-center">Owned and Distributed by Taylor Schneider</div>

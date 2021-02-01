@@ -20,20 +20,20 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="../Icons/favicon-16x16.png">
 
 	<!-- Primary Meta Tags -->
-	<title>SirCodes Homepage</title>
-	<meta name="title" content="Mister SirCodes Homepage">
+	<title>SirCodes Projects</title>
+	<meta name="title" content="SirCodes Projects">
 	<meta name="description" content="Main website for my Projects and Portfolio">
 	<meta name="theme-color" content="#ffffff">
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="Mister SirCodes Homepage">
+	<meta property="og:title" content="SirCodes Projects">
 	<meta property="og:description" content="Main website for my Projects and Portfolio">
 	<meta property="og:image" content="https://mistersircode.com/Images/SCLOGOSmall.png">
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image">
-	<meta property="twitter:title" content="Mister SirCodes Homepage">
+	<meta property="twitter:title" content="SirCodes Projects">
 	<meta property="twitter:description" content="Main website for my Projects and Portfolio">
 	<meta property="twitter:image" content="https://mistersircode.com/Images/SCLOGOSmall.png">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -73,7 +73,8 @@
 		<div class="overlay"></div>
 		<div class="description">
 			<h1>Current Projects</h1>
-			<p>This page will contain all of my Projects and Creations</p>
+			<p>My projects, applications, games, extensions, mods, and other miscellaneous creations.<br>
+				Scroll down for more information</p>
 			<br>
 			<h6>Background Arts by <a href="https://www.pexels.com/@earano">Emiliano Arano</a></h6>
 		</div>
@@ -92,7 +93,7 @@
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
 				<h3 class="feature-title">Durl Converter</h3>
-				<img src="../Images/Projects/AndroidArthur.png" class="img-fluid">
+				<img src="../Images/Projects/DurlConverter.png" class="img-fluid">
 				<p>Small chrome extension that allows for speedy conversion of Base64 to and from ASCI and DataURLs from Files</p>
 			</div>
 		</div> 
