@@ -106,13 +106,8 @@
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
 				<h3 class="feature-title">Coldrock</h3>
-				<img src="../Images/Art/Mandelbulb.png" class="img-fluid round">
+				<img src="../Images/Art/Cold Rock.png" class="img-fluid round">
 				<p>Coldrock was a small 3D Planet Project to create a fully procedural rocky moon.</p>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-12">
-				<h3 class="feature-title"></h3>
-				<img src="../Images/Art/Mandelbulb.png" class="img-fluid round">
-				<p>This was a 3D Rendered Mandelbrot Fractal. Created using immense complex formulea and subsurface materials I created.</p>
 			</div>
 		</div> 
 	</div>
