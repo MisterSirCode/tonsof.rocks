@@ -73,8 +73,8 @@
 		<div class="overlay"></div>
 		<div class="description">
 			<h1>Contact Page</h1>
-			<p>Contact info if you're curious about something, or want to request my services</p>
-			<p>Please scroll down for more information</p>
+			<p>Contact info if you're curious about something, or want to request my services<br>
+				Scroll down for more information</p>
 			<br>
 			<h6>Background Art by <a href="https://www.pexels.com/@earano">Emiliano Arano</a></h6>
 		</div>
