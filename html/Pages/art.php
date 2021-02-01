@@ -109,6 +109,11 @@
 				<img src="../Images/Art/Cold Rock.png" class="img-fluid round">
 				<p>Coldrock was a small 3D Planet Project to create a fully procedural rocky moon.</p>
 			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<h3 class="feature-title">Deserted</h3>
+				<img src="../Images/Art/Deserted.png" class="img-fluid round">
+				<p>This was one of my first attempts at true photo-realism in 3D Art</p>
+			</div>
 		</div> 
 	</div>
 	<footer class="page-footer">
