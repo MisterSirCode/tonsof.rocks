@@ -58,7 +58,10 @@
 					<a class="nav-link" href="../">Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="">Projects</a>
+					<a class="nav-link" href="../projects">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link">Art</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="../portfolio">Portfolio</a>
@@ -88,13 +91,8 @@
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
 				<h3 class="feature-title">Android Arthur</h3>
-				<img src="../Images/Projects/AndroidArthur.png" class="img-fluid">
+				<img src="../Images/Projects/AndroidArthur.png" class="img-fluid round">
 				<p>This is a high quality Discord Bot that I'm building, it's main focus is working as an interconnected API for my game. However, it also contains many high quality commands and moderation tools useful for any server</p>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-12">
-				<h3 class="feature-title">Durl Converter</h3>
-				<img src="../Images/Projects/DurlConverter.png" class="img-fluid">
-				<p>Small chrome extension that allows for speedy conversion of Base64 to and from ASCI and DataURLs from Files</p>
 			</div>
 		</div> 
 	</div>

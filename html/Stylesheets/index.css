@@ -108,6 +108,10 @@ body * {
 	margin-bottom: 16px;
 }
 
+.features img.round {
+    border-radius: 100%;
+}
+
 .features .form-control,
 .features input {
 	border-radius: 0;
