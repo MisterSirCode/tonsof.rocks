@@ -20,20 +20,20 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="../Icons/favicon-16x16.png">
 
 	<!-- Primary Meta Tags -->
-	<title>SirCodes Homepage</title>
-	<meta name="title" content="Mister SirCodes Homepage">
+	<title>SirCodes Portfolio</title>
+	<meta name="title" content="SirCodes Portfolio">
 	<meta name="description" content="Main website for my Projects and Portfolio">
 	<meta name="theme-color" content="#ffffff">
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="Mister SirCodes Homepage">
+	<meta property="og:title" content="SirCodes Portfolio">
 	<meta property="og:description" content="Main website for my Projects and Portfolio">
 	<meta property="og:image" content="https://mistersircode.com/Images/SCLOGOSmall.png">
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image">
-	<meta property="twitter:title" content="Mister SirCodes Homepage">
+	<meta property="twitter:title" content="SirCodes Portfolio">
 	<meta property="twitter:description" content="Main website for my Projects and Portfolio">
 	<meta property="twitter:image" content="https://mistersircode.com/Images/SCLOGOSmall.png">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"

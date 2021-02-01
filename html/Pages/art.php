@@ -20,20 +20,20 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="../Icons/favicon-16x16.png">
 
 	<!-- Primary Meta Tags -->
-	<title>SirCodes Contacts</title>
-	<meta name="title" content="SirCodes Contacts">
+	<title>SirCodes Art</title>
+	<meta name="title" content="Mister SirCodes Homepage">
 	<meta name="description" content="Main website for my Projects and Portfolio">
 	<meta name="theme-color" content="#ffffff">
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="SirCodes Contacts">
+	<meta property="og:title" content="Mister SirCodes Homepage">
 	<meta property="og:description" content="Main website for my Projects and Portfolio">
 	<meta property="og:image" content="https://mistersircode.com/Images/SCLOGOSmall.png">
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image">
-	<meta property="twitter:title" content="SirCodes Contacts">
+	<meta property="twitter:title" content="Mister SirCodes Homepage">
 	<meta property="twitter:description" content="Main website for my Projects and Portfolio">
 	<meta property="twitter:image" content="https://mistersircode.com/Images/SCLOGOSmall.png">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -58,13 +58,13 @@
 					<a class="nav-link" href="../">Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="../projects">Projects</a>
+					<a class="nav-link" href="">Projects</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="../portfolio">Portfolio</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link">Contact</a>
+					<a class="nav-link" href="../contact">Contact</a>
 				</li>
 			</ul>
 		</div>
@@ -72,13 +72,31 @@
 	<header class="page-header header container-fluid">
 		<div class="overlay"></div>
 		<div class="description">
-			<h1>Contact Page</h1>
-			<p>Contact info if you're curious about something, or want to request my services</p>
-			<p>Please scroll down for more information</p>
+			<h1>Current Projects</h1>
+			<p>This page will contain all of my Projects and Creations</p>
 			<br>
-			<h6>Background Art by <a href="https://www.pexels.com/@earano">Emiliano Arano</a></h6>
+			<h6>Background Arts by <a href="https://www.pexels.com/@earano">Emiliano Arano</a></h6>
 		</div>
 	</header>
+	<div class="container features">
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<h3 class="feature-title">Deepworld Remastered</h3>
+				<img src="../Images/Projects/DeepworldRemastered.png" class="img-fluid">
+				<p>This is a remaster / remake of the massively multiplayer MMO RPG "Deepworld" created by Bytebin Studios</p>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<h3 class="feature-title">Android Arthur</h3>
+				<img src="../Images/Projects/AndroidArthur.png" class="img-fluid">
+				<p>This is a high quality Discord Bot that I'm building, it's main focus is working as an interconnected API for my game. However, it also contains many high quality commands and moderation tools useful for any server</p>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<h3 class="feature-title">Durl Converter</h3>
+				<img src="../Images/Projects/DurlConverter.png" class="img-fluid">
+				<p>Small chrome extension that allows for speedy conversion of Base64 to and from ASCI and DataURLs from Files</p>
+			</div>
+		</div> 
+	</div>
 	<footer class="page-footer">
 		<div class="footer-copyright text-center">Copyright © 2021</div>
 		<div class="footer-copyright text-center">Owned and Distributed by Taylor Schneider</div>
