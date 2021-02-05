@@ -83,7 +83,7 @@
 		</div>
 	</header>
 	<div class="container features">
-		<h3>Click a project image to see more info about the project</h3>
+		<h3 class="centered-title-feature">Click a project image to see more info about the project</h3>
 		<br>
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-12">
