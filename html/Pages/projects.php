@@ -84,7 +84,7 @@
 	</header>
 	<div class="container features">
 		<h3 class="centered-title-feature">Click a project image to see more info about the project</h3>
-		<br>
+		<br><br>
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-12">
 				<h3 class="feature-title">Deepworld Remastered</h3>
