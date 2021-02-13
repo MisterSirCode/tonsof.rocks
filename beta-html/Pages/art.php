@@ -58,7 +58,10 @@
 					<a class="nav-link" href="../">Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="">Projects</a>
+					<a class="nav-link" href="../projects">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link">Art</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="../portfolio">Portfolio</a>
@@ -82,19 +85,39 @@
 	<div class="container features">
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<h3 class="feature-title">Deepworld Remastered</h3>
-				<img src="../Images/Projects/DeepworldRemastered.png" class="img-fluid">
-				<p>This is a remaster / remake of the massively multiplayer MMO RPG "Deepworld" created by Bytebin Studios</p>
+				<h3 class="feature-title">Fox Sketch</h3>
+				<img src="../Images/Art/FoxSketch.png" class="img-fluid">
+				<p>(Copyrighted) One of my first Digital Only drawings. Originally based off of a wolf, but adapted into a drawing of a fox.</p>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<h3 class="feature-title">Android Arthur</h3>
-				<img src="../Images/Projects/AndroidArthur.png" class="img-fluid">
-				<p>This is a high quality Discord Bot that I'm building, it's main focus is working as an interconnected API for my game. However, it also contains many high quality commands and moderation tools useful for any server</p>
+				<h3 class="feature-title">Mandelbulb</h3>
+				<img src="../Images/Art/Mandelbulb.png" class="img-fluid">
+				<p>This was a 3D Rendered Mandelbrot Fractal. Created using immense complex formulea and subsurface materials I created.</p>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<h3 class="feature-title">Durl Converter</h3>
-				<img src="../Images/Projects/DurlConverter.png" class="img-fluid">
-				<p>Small chrome extension that allows for speedy conversion of Base64 to and from ASCI and DataURLs from Files</p>
+				<h3 class="feature-title">The Old Eye</h3>
+				<img src="../Images/Art/EyeSketch.png" class="img-fluid">
+				<p>(Copyrighted) One of my more recent sketches. Based off a photo of a human eye socket.</p>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<h3 class="feature-title">HOT</h3>
+				<img src="../Images/Art/Hot.png" class="img-fluid">
+				<p>A 3D rendered "Sun" of some sort. It was less of a creation and more of an accident, but I still love the design</p>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<h3 class="feature-title">Coldrock</h3>
+				<img src="../Images/Art/Cold Rock.png" class="img-fluid">
+				<p>Coldrock was a small 3D Planet Project to create a fully procedural rocky moon.</p>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<h3 class="feature-title">Deserted</h3>
+				<img src="../Images/Art/Deserted.png" class="img-fluid">
+				<p>This was one of my first attempts at true photo-realism in 3D Art</p>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<h3 class="feature-title">Futuretire</h3>
+				<img src="../Images/Art/FutureTire.png" class="img-fluid">
+				<p>A futuristic vehicle tire / wheel, built using hard surface modeling and a lot of extra time.</p>
 			</div>
 		</div> 
 	</div>

@@ -61,6 +61,9 @@
 					<a class="nav-link" href="../projects">Projects</a>
 				</li>
 				<li class="nav-item">
+					<a class="nav-link" href="../art">Art</a>
+				</li>
+				<li class="nav-item">
 					<a class="nav-link" href="../portfolio">Portfolio</a>
 				</li>
 				<li class="nav-item">

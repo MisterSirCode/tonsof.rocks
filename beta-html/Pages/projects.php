@@ -61,6 +61,9 @@
 					<a class="nav-link" href="">Projects</a>
 				</li>
 				<li class="nav-item">
+					<a class="nav-link" href="../art">Art</a>
+				</li>
+				<li class="nav-item">
 					<a class="nav-link" href="../portfolio">Portfolio</a>
 				</li>
 				<li class="nav-item">
@@ -80,20 +83,22 @@
 		</div>
 	</header>
 	<div class="container features">
+		<h3 class="centered-title-feature">Click a project image to see more info about the project</h3>
+		<br><br>
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-12">
 				<h3 class="feature-title">Deepworld Remastered</h3>
-				<img src="../Images/Projects/DeepworldRemastered.png" class="img-fluid">
+				<a href="http://gamejolt.com/games/dwre/512179"><img src="../Images/Projects/DeepworldRemastered.png" class="img-fluid"></a>
 				<p>This is a remaster / remake of the massively multiplayer MMO RPG "Deepworld" created by Bytebin Studios</p>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
 				<h3 class="feature-title">Android Arthur</h3>
-				<img src="../Images/Projects/AndroidArthur.png" class="img-fluid">
+				<a><img src="../Images/Projects/AndroidArthur.png" class="img-fluid round"></a>
 				<p>This is a high quality Discord Bot that I'm building, it's main focus is working as an interconnected API for my game. However, it also contains many high quality commands and moderation tools useful for any server</p>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
 				<h3 class="feature-title">Durl Converter</h3>
-				<img src="../Images/Projects/DurlConverter.png" class="img-fluid">
+				<a href="https://chrome.google.com/webstore/detail/durl-base64-converter/bnajhhomkbmieceglbpblnfcbgbefkfk"><img src="../Images/Projects/DurlConverter.png" class="img-fluid round"></a>
 				<p>Small chrome extension that allows for speedy conversion of Base64 to and from ASCI and DataURLs from Files</p>
 			</div>
 		</div> 

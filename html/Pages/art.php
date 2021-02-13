@@ -114,6 +114,11 @@
 				<img src="../Images/Art/Deserted.png" class="img-fluid">
 				<p>This was one of my first attempts at true photo-realism in 3D Art</p>
 			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<h3 class="feature-title">Futuretire</h3>
+				<img src="../Images/Art/FutureTire.png" class="img-fluid">
+				<p>A futuristic vehicle tire / wheel, built using hard surface modeling and a lot of extra time.</p>
+			</div>
 		</div> 
 	</div>
 	<footer class="page-footer">
