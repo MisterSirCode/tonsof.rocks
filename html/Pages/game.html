@@ -115,6 +115,10 @@
     let playGameAlpha = 1;
     let ingameAlpha = 0;
 
+    
+    const groundImage = new Image();
+    groundImage.src = "../Images/noiseGradientGround.png";
+
     function getMouseLocation(e) {
 		let rect = cvs.getBoundingClientRect(),
 			scaleX = cvs.width / rect.width,
@@ -163,8 +167,6 @@
         });
     }
 
-    init();
-
     window.addEventListener("resize", () => {
         cvs.width = window.innerWidth;
         cvs.height = window.innerHeight;
@@ -188,12 +190,25 @@
             ctx.font = "75px Courier monospace";
             ctx.fillText("PLAY", cvs.width / 2, cvs.height / 2 + 25);
         } else if (gameState == "game") {
+            ctx.save();
+                ctx.imageSmoothingEnabled = false;
+                const groundSize = cvs.width / 3;
+                for (var i = 0; i < 4; i++) {
+                    ctx.drawImage(groundImage, i * groundSize, cvs.height - groundSize, groundSize, groundSize);
+                }
+            ctx.restore();
             ctx.fillStyle = `rgba(255, 255, 255, ${ingameAlpha})`;
-            ctx.fillRect(0, 0, cvs.width, cvs.height);
             const mg = 20;
-            ctx.fillStyle = "#000";
-            ctx.fillRect(mg, mg, cvs.width - mg * 2, cvs.height - mg * 2);
+            ctx.fillRect(0, 0, cvs.width, mg);
+            ctx.fillRect(0, cvs.height - mg, cvs.width, mg);
+            ctx.fillRect(0, 0, mg, cvs.height);
+            ctx.fillRect(cvs.width - mg, 0, mg, cvs.height);
         }
+    }
+
+    
+    groundImage.onload = function() {
+        init();
     }
 </script> 
 
