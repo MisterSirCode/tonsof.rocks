@@ -61,40 +61,9 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md">
-        <a class="navbar-brand" href="/">
-            <img src="../Images/SCLOGOSmall.png" alt="" height="30px">
-        </a>
-        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="main-navigation">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="../">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../art">Art</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../portfolio">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
     <header class="page-header header container-fluid">
         <canvas class="gameCanvas"></canvas>
     </header>
-    <footer class="page-footer">
-        <div class="footer-copyright text-center">Copyright © 2021</div>
-        <div class="footer-copyright text-center">Owned and Distributed by Taylor Schneider</div>
-    </footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
@@ -114,7 +83,10 @@
     let switchingFromStart = false;
     let playGameAlpha = 1;
     let ingameAlpha = 0;
-
+    let currentGroundPos = [0, 0, 0];
+    let groundSize = 0;
+    let moveSpeed = 0;
+    let gameStartTimer = 3;
     
     const groundImage = new Image();
     groundImage.src = "../Images/noiseGradientGround.png";
@@ -144,6 +116,10 @@
     function init() {
         cvs.width = window.innerWidth;
         cvs.height = window.innerHeight;
+        groundSize = cvs.width / 3;
+        for (var i = 0; i < 4; i++) {
+            currentGroundPos[i] = i * groundSize;
+        }
         update();
         document.body.addEventListener("click", (e) => {
             const m = getMouseLocation(e);
@@ -192,9 +168,10 @@
         } else if (gameState == "game") {
             ctx.save();
                 ctx.imageSmoothingEnabled = false;
-                const groundSize = cvs.width / 3;
                 for (var i = 0; i < 4; i++) {
-                    ctx.drawImage(groundImage, i * groundSize, cvs.height - groundSize, groundSize, groundSize);
+                    currentGroundPos[i] -= moveSpeed;
+                    if (currentGroundPos[i] <= -groundSize) currentGroundPos[i] = 3 * groundSize - moveSpeed;
+                    ctx.drawImage(groundImage, currentGroundPos[i], cvs.height - groundSize, groundSize, groundSize);
                 }
             ctx.restore();
             ctx.fillStyle = `rgba(255, 255, 255, ${ingameAlpha})`;
