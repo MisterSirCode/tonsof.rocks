@@ -52,28 +52,22 @@
 
         body {
             overflow-x: hidden;
+            background: black;
         }
 
         .container-fluid {
             padding: 0 !important;
         }
+
+        canvas {
+            margin-left: 25%;
+        }
     </style>
 </head>
 
 <body>
-    <header class="page-header header container-fluid">
-        <canvas class="gameCanvas"></canvas>
-    </header>
+    <canvas class="gameCanvas"></canvas>
 </body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
-</script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
-</script>
 <script>
     const cvs = document.querySelector(".gameCanvas");
     const ctx = cvs.getContext("2d");
@@ -84,12 +78,16 @@
     let playGameAlpha = 1;
     let ingameAlpha = 0;
     let currentGroundPos = [0, 0, 0];
+    let currentSkyPos = [0, 0, 0];
     let groundSize = 0;
-    let moveSpeed = 0;
+    let skySize = 0;
+    let moveSpeed = 8;
     let gameStartTimer = 3;
     
     const groundImage = new Image();
     groundImage.src = "../Images/noiseGradientGround.png";
+    const skyImage = new Image();
+    skyImage.src = "../Images/noiseGradientSky.png";
 
     function getMouseLocation(e) {
 		let rect = cvs.getBoundingClientRect(),
@@ -114,11 +112,15 @@
     }
 
     function init() {
-        cvs.width = window.innerWidth;
+        cvs.width = window.innerHeight;
         cvs.height = window.innerHeight;
         groundSize = cvs.width / 3;
         for (var i = 0; i < 4; i++) {
             currentGroundPos[i] = i * groundSize;
+        }
+        skySize = cvs.width / 1.5;
+        for (var i = 0; i < 4; i++) {
+            currentSkyPos[i] = i * skySize;
         }
         update();
         document.body.addEventListener("click", (e) => {
@@ -144,7 +146,7 @@
     }
 
     window.addEventListener("resize", () => {
-        cvs.width = window.innerWidth;
+        cvs.width = window.innerHeight;
         cvs.height = window.innerHeight;
     });
 
@@ -170,13 +172,21 @@
                 ctx.imageSmoothingEnabled = false;
                 for (var i = 0; i < 4; i++) {
                     currentGroundPos[i] -= moveSpeed;
-                    if (currentGroundPos[i] <= -groundSize) currentGroundPos[i] = 3 * groundSize - moveSpeed;
+                    if (currentGroundPos[i] <= -groundSize) currentGroundPos[i] = 3 * groundSize - moveSpeed - 0.5;
                     ctx.drawImage(groundImage, currentGroundPos[i], cvs.height - groundSize, groundSize, groundSize);
                 }
+                for (var i = 0; i < 4; i++) {
+                    currentSkyPos[i] -= moveSpeed / 3;
+                    if (currentSkyPos[i] <= -skySize) currentSkyPos[i] = 3 * skySize - (moveSpeed / 2 + 0.5);
+                    ctx.drawImage(skyImage, currentSkyPos[i], cvs.height - skySize - groundSize, skySize, skySize);
+                }
             ctx.restore();
+            ctx.fillStyle = "#000";
+            ctx.fillRect(0, 0, cvs.width, 50);
             ctx.fillStyle = `rgba(255, 255, 255, ${ingameAlpha})`;
             const mg = 20;
             ctx.fillRect(0, 0, cvs.width, mg);
+            ctx.fillRect(0, 50, cvs.width, mg);
             ctx.fillRect(0, cvs.height - mg, cvs.width, mg);
             ctx.fillRect(0, 0, mg, cvs.height);
             ctx.fillRect(cvs.width - mg, 0, mg, cvs.height);
