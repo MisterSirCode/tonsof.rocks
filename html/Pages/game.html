@@ -42,6 +42,12 @@
     <style>
         * {
             box-sizing: border-box;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
         }
 
         body {
@@ -102,21 +108,93 @@
 <script>
     const cvs = document.querySelector(".gameCanvas");
     const ctx = cvs.getContext("2d");
+
+    let gameState = "start";
+    let switchingToGame = false;
+    let switchingFromStart = false;
+    let playGameAlpha = 1;
+    let ingameAlpha = 0;
+
+    function getMouseLocation(e) {
+		let rect = cvs.getBoundingClientRect(),
+			scaleX = cvs.width / rect.width,
+			scaleY = cvs.height / rect.height;
+		return {
+			x: ((e.clientX - rect.left) * scaleX) - 2,
+			y: ((e.clientY - rect.top) * scaleY) - 2
+		};
+	}
+
+    function centerRect(x, y, w, h) {
+        ctx.fillRect(x - (w / 2), y - (h / 2), w, h);
+    }
+
+    function mouseInCenterRect(mx, my, x, y, w, h) {
+        return mx >= x - (w / 2) && mx <= x - (w / 2) + w && my >= y - (h / 2) && my <= y - (h / 2) + h;
+    }
+
+    function mouseInRect(mx, my, x, y, w, h) {
+        return mx >= x && mx <= x + w && my >= y && my <= y + h;
+    }
+
     function init() {
         cvs.width = window.innerWidth;
         cvs.height = window.innerHeight;
         update();
+        document.body.addEventListener("click", (e) => {
+            const m = getMouseLocation(e);
+            if (gameState == "start") {
+                if (mouseInCenterRect(m.x, m.y, cvs.width / 2 - 2, cvs.height / 2, 256, 128)) {
+                    switchingToGame = true;
+                    setTimeout(() => { 
+                        gameState = "game";
+                        playGameAlpha = 0;
+                        switchingToGame = false;
+                        switchingFromStart = true;
+                    }, 1000);
+                    setTimeout(() => {
+                        switchingFromStart = false;
+                        ingameAlpha = 1;
+                    }, 2000);
+                }
+            } else {
+
+            }
+        });
     }
+
     init();
+
     window.addEventListener("resize", () => {
         cvs.width = window.innerWidth;
         cvs.height = window.innerHeight;
     });
+
     function update() {
-        ctx.fillStyle = 0x0000000;
+        ctx.fillStyle = "#000";
         ctx.fillRect(0, 0, cvs.width, cvs.height);
+        drawEnvironment();
         window.requestAnimationFrame(update);
     }
-</script>
+
+    function drawEnvironment() {
+        if (switchingToGame) playGameAlpha -= 0.1;
+        if (switchingFromStart) ingameAlpha += 0.1;
+        if (gameState == "start") {
+            ctx.fillStyle = `rgba(255, 255, 255, ${playGameAlpha})`;
+            centerRect(cvs.width / 2, cvs.height / 2, 256, 128);
+            ctx.textAlign = "center";
+            ctx.fillStyle = "#000";
+            ctx.font = "75px Courier monospace";
+            ctx.fillText("PLAY", cvs.width / 2, cvs.height / 2 + 25);
+        } else if (gameState == "game") {
+            ctx.fillStyle = `rgba(255, 255, 255, ${ingameAlpha})`;
+            ctx.fillRect(0, 0, cvs.width, cvs.height);
+            const mg = 20;
+            ctx.fillStyle = "#000";
+            ctx.fillRect(mg, mg, cvs.width - mg * 2, cvs.height - mg * 2);
+        }
+    }
+</script> 
 
 </html>
