@@ -82,6 +82,7 @@
     let groundSize = 0;
     let skySize = 0;
     let moveSpeed = 8;
+    let skyMoveSpeed = moveSpeed / 8;
     let gameStartTimer = 3;
     
     const groundImage = new Image();
@@ -176,8 +177,8 @@
                     ctx.drawImage(groundImage, currentGroundPos[i], cvs.height - groundSize, groundSize, groundSize);
                 }
                 for (var i = 0; i < 4; i++) {
-                    currentSkyPos[i] -= moveSpeed / 3;
-                    if (currentSkyPos[i] <= -skySize) currentSkyPos[i] = 3 * skySize - (moveSpeed / 2 + 0.5);
+                    currentSkyPos[i] -= skyMoveSpeed / 2;
+                    if (currentSkyPos[i] <= -skySize) currentSkyPos[i] = 3 * skySize - (skyMoveSpeed / 2 + 0.5);
                     ctx.drawImage(skyImage, currentSkyPos[i], cvs.height - skySize - groundSize, skySize, skySize);
                 }
             ctx.restore();
