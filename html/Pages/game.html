@@ -203,7 +203,7 @@
             });
             for (var i = 0; i < 4; i++) {
                 if (currentSkyPos[i] <= -skySize) currentSkyPos[i] = 3 * skySize;
-                ctx.drawImage(skyImage, currentSkyPos[i], , skySize, skySize);
+                ctx.drawImage(skyImage, currentSkyPos[i], cvs.height - groundSize - skySize, skySize, skySize);
             }
             ctx.restore();
         }
