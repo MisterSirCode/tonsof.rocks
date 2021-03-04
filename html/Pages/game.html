@@ -60,7 +60,7 @@
         }
 
         canvas {
-            /* margin-left: 25%; */
+            margin-left: 25%;
         }
     </style>
 </head>
@@ -84,21 +84,28 @@
     let moveSpeed = 7;
     let skyMoveSpeed = moveSpeed / 8;
     let gameStartTimer = 3;
-    
+    let playerY = 0;
+    let goToPlayerY = 0;
+    let obstacles = [];
+
     const groundImage = new Image();
     groundImage.src = "../Images/noiseGradientGround.png";
     const skyImage = new Image();
     skyImage.src = "../Images/noiseGradientSky.png";
+    const playerImage = new Image();
+    playerImage.src = "../Images/playerCharacter.png";
+    const obstImage = new Image();
+    obstImage.src = "../Images/obstacle.png";
 
     function getMouseLocation(e) {
-		let rect = cvs.getBoundingClientRect(),
-			scaleX = cvs.width / rect.width,
-			scaleY = cvs.height / rect.height;
-		return {
-			x: ((e.clientX - rect.left) * scaleX) - 2,
-			y: ((e.clientY - rect.top) * scaleY) - 2
-		};
-	}
+        let rect = cvs.getBoundingClientRect(),
+            scaleX = cvs.width / rect.width,
+            scaleY = cvs.height / rect.height;
+        return {
+            x: ((e.clientX - rect.left) * scaleX) - 2,
+            y: ((e.clientY - rect.top) * scaleY) - 2
+        };
+    }
 
     function centerRect(x, y, w, h) {
         ctx.fillRect(x - (w / 2), y - (h / 2), w, h);
@@ -129,7 +136,7 @@
             if (gameState == "start") {
                 if (mouseInCenterRect(m.x, m.y, cvs.width / 2 - 2, cvs.height / 2, 256, 128)) {
                     switchingToGame = true;
-                    setTimeout(() => { 
+                    setTimeout(() => {
                         gameState = "game";
                         playGameAlpha = 0;
                         switchingToGame = false;
@@ -155,6 +162,17 @@
         ctx.fillStyle = "#000";
         ctx.fillRect(0, 0, cvs.width, cvs.height);
         drawEnvironment();
+        drawObstacles();
+        drawPlayer();
+        ctx.fillStyle = "#000";
+        ctx.fillRect(0, 0, cvs.width, 50);
+        ctx.fillStyle = `rgba(255, 255, 255, ${ingameAlpha})`;
+        const mg = 20;
+        ctx.fillRect(0, 0, cvs.width, mg);
+        ctx.fillRect(0, 50, cvs.width, mg);
+        ctx.fillRect(0, cvs.height - mg, cvs.width, mg);
+        ctx.fillRect(0, 0, mg, cvs.height);
+        ctx.fillRect(cvs.width - mg, 0, mg, cvs.height);
         window.requestAnimationFrame(update);
     }
 
@@ -170,34 +188,69 @@
             ctx.fillText("PLAY", cvs.width / 2, cvs.height / 2 + 25);
         } else if (gameState == "game") {
             ctx.save();
-                ctx.imageSmoothingEnabled = false;
-                for (var i = 0; i < 4; i++) {
-                    currentGroundPos[i] -= moveSpeed;
-                    if (currentGroundPos[i] <= -groundSize) currentGroundPos[i] = 3 * groundSize - moveSpeed ;
-                    ctx.drawImage(groundImage, currentGroundPos[i], cvs.height - groundSize, groundSize, groundSize);
-                }
-                for (var i = 0; i < 4; i++) {
-                    currentSkyPos[i] -= skyMoveSpeed / 2;
-                    if (currentSkyPos[i] <= -skySize) currentSkyPos[i] = 3 * skySize - (skyMoveSpeed / 2 + 0.5);
-                    ctx.drawImage(skyImage, currentSkyPos[i], cvs.height - skySize - groundSize, skySize, skySize);
-                }
+            ctx.imageSmoothingEnabled = false;
+            for (var i = 0; i < 4; i++) {
+                currentGroundPos[i] -= moveSpeed;
+                if (currentGroundPos[i] <= -groundSize) currentGroundPos[i] = 3 * groundSize - moveSpeed;
+                ctx.drawImage(groundImage, currentGroundPos[i], cvs.height - groundSize, groundSize, groundSize);
+            }
+            for (var i = 0; i < 4; i++) {
+                if (currentSkyPos[i] <= -skySize) currentSkyPos[i] = 3 * skySize;
+                ctx.drawImage(skyImage, currentSkyPos[i], cvs.height - skySize - groundSize, skySize, skySize);
+            }
             ctx.restore();
-            ctx.fillStyle = "#000";
-            ctx.fillRect(0, 0, cvs.width, 50);
-            ctx.fillStyle = `rgba(255, 255, 255, ${ingameAlpha})`;
-            const mg = 20;
-            ctx.fillRect(0, 0, cvs.width, mg);
-            ctx.fillRect(0, 50, cvs.width, mg);
-            ctx.fillRect(0, cvs.height - mg, cvs.width, mg);
-            ctx.fillRect(0, 0, mg, cvs.height);
-            ctx.fillRect(cvs.width - mg, 0, mg, cvs.height);
         }
     }
 
-    
-    groundImage.onload = function() {
+    document.addEventListener("keydown", (e) => {
+        if (gameState == "game") {
+            if (playerY === 0 && e.key === " ") {
+                goToPlayerY = 128;
+            }
+        }
+    });
+
+    function drawObstacles() {
+        if (gameState == "game") {
+            const chance = Math.random() * 100;
+            if (chance > 99.4) {
+                obstacles.push([groundSize * 3, (cvs.height - groundSize - 32)]);
+            }
+            obstacles.forEach((e) => {
+                console.log(e[0]);
+                e[0] -= moveSpeed;
+                ctx.drawImage(obstImage, e[0], e[1], 32, 32);
+                if (e[0] <= -64) obstacles.shift();
+                if (playerY >= -10 && playerY < 32 && e[0] <= 220 && e[0] >= 200) {
+                    console.log("died");
+                    switchingToGame = false;
+                    switchingFromStart = false;
+                    gameState = "start";
+                    playGameAlpha = 1;
+                    ingameAlpha = 0;
+                    obstacles = [];
+                    playerY = 0;
+                    goToPlayerY = 0;
+                }
+            });
+        }
+    }
+
+    function drawPlayer() {
+        if (gameState == "game") {
+            ctx.save();
+            ctx.imageSmoothingEnabled = false;
+            if (playerY < goToPlayerY) playerY += 8;
+            if (playerY > goToPlayerY) playerY -= 8;
+            if (playerY >= 128) goToPlayerY = 0;
+            ctx.drawImage(playerImage, 256, (cvs.height - groundSize - 64) - playerY, 64, 64);
+            ctx.restore();
+        }
+    }
+
+    groundImage.onload = function () {
         init();
     }
-</script> 
+</script>
 
 </html>
