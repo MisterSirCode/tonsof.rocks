@@ -87,6 +87,7 @@
     let playerY = 0;
     let goToPlayerY = 0;
     let obstacles = [];
+    let immortal = false;
 
     const groundImage = new Image();
     groundImage.src = "../Images/noiseGradientGround.png";
@@ -224,8 +225,7 @@
                 if (location.hash === "#debug" || location.hash === "debug") 
                     ctx.fillRect(e[0], e[1], 32, 32);
                 if (e[0] <= -64) obstacles.shift();
-                if (playerY >= -10 && playerY < 32 && e[0] <= 290 && e[0] >= 270) {
-                    console.log("died");
+                if (playerY >= -10 && playerY < 32 && e[0] <= 290 && e[0] >= 270 && immortal === false) {
                     switchingToGame = false;
                     switchingFromStart = false;
                     gameState = "start";
