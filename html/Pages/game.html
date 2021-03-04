@@ -87,6 +87,7 @@
     let playerY = 0;
     let goToPlayerY = 0;
     let obstacles = [];
+    let groundBlocks = [];
     let immortal = false;
 
     const groundImage = new Image();
@@ -190,14 +191,19 @@
         } else if (gameState == "game") {
             ctx.save();
             ctx.imageSmoothingEnabled = false;
-            for (var i = 0; i < 4; i++) {
-                currentGroundPos[i] -= moveSpeed;
-                if (currentGroundPos[i] <= -groundSize) currentGroundPos[i] = 3 * groundSize - moveSpeed;
-                ctx.drawImage(groundImage, currentGroundPos[i], cvs.height - groundSize, groundSize, groundSize);
+            let currentPos = groundSize;
+                currentPos -= moveSpeed;
+            if (currentPos <= 0) {
+                groundBlocks.push([cvs.width, cvs.height - groundSize]);
+                currentPos = groundSize;
             }
+            groundBlocks.forEach((e) => {
+                ctx.drawImage(groundImage, e[0], e[1], groundSize, groundSize);
+                e[0] -= moveSpeed;
+            });
             for (var i = 0; i < 4; i++) {
                 if (currentSkyPos[i] <= -skySize) currentSkyPos[i] = 3 * skySize;
-                ctx.drawImage(skyImage, currentSkyPos[i], cvs.height - skySize - groundSize, skySize, skySize);
+                ctx.drawImage(skyImage, currentSkyPos[i], , skySize, skySize);
             }
             ctx.restore();
         }
