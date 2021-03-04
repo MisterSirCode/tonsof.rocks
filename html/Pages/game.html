@@ -221,7 +221,7 @@
                 e[0] -= moveSpeed;
                 ctx.drawImage(obstImage, e[0], e[1], 32, 32);
                 if (e[0] <= -64) obstacles.shift();
-                if (playerY >= -10 && playerY < 32 && e[0] <= 220 && e[0] >= 200) {
+                if (playerY >= -10 && playerY < 32 && e[0] <= 220 && e[0] >= 230) {
                     console.log("died");
                     switchingToGame = false;
                     switchingFromStart = false;
@@ -233,7 +233,7 @@
                     goToPlayerY = 0;
                 }
                 ctx.fillStyle = "rgba(255, 0, 0, 0.6)";
-                ctx.fillRect(200, (cvs.height - groundSize - 64) - 10, 20, 42);
+                ctx.fillRect(230, (cvs.height - groundSize - 64) - 10, 20, 42);
             });
         }
     }
