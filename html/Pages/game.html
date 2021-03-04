@@ -199,7 +199,7 @@
                 currentPos = groundSize;
             }
             groundBlocks.forEach((e) => {
-                ctx.drawImage(groundImage, e[0], e[1], groundSize, groundSize);
+                ctx.drawImage(groundImage, e[0] + moveSpeed, e[1], groundSize, groundSize);
                 e[0] -= moveSpeed;
             });
             for (var i = 0; i < 4; i++) {
