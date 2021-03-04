@@ -126,6 +126,7 @@
         cvs.width = window.innerHeight;
         cvs.height = window.innerHeight;
         groundSize = cvs.width / 3;
+        currentPos = groundSize;
         for (var i = 0; i < 4; i++) {
             currentGroundPos[i] = i * groundSize;
         }
@@ -192,7 +193,6 @@
         } else if (gameState == "game") {
             ctx.save();
             ctx.imageSmoothingEnabled = false;
-            currentPos = groundSize;
             currentPos -= moveSpeed;
             if (currentPos <= 0) {
                 groundBlocks.push([cvs.width, cvs.height - groundSize]);
