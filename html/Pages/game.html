@@ -249,6 +249,9 @@
             if (playerY < goToPlayerY) playerY += 8;
             if (playerY > goToPlayerY) playerY -= 8;
             if (playerY >= 128) goToPlayerY = 0;
+            ctx.fillStyle = "rgba(0, 255, 0, 0.6)";
+            if (location.hash === "#debug" || location.hash === "debug") 
+                ctx.fillRect(256, (cvs.height - groundSize - 64) - playerY, 64, 64);
             ctx.drawImage(playerImage, 256, (cvs.height - groundSize - 64) - playerY, 64, 64);
             ctx.restore();
         }
