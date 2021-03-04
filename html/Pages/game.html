@@ -194,12 +194,12 @@
             ctx.save();
             ctx.imageSmoothingEnabled = false;
             currentPos -= moveSpeed;
-            if (currentPos <= 0) {
+            if (currentPos - moveSpeed <= 0) {
                 groundBlocks.push([cvs.width, cvs.height - groundSize]);
                 currentPos = groundSize;
             }
             groundBlocks.forEach((e) => {
-                ctx.drawImage(groundImage, e[0] + moveSpeed, e[1], groundSize, groundSize);
+                ctx.drawImage(groundImage, e[0], e[1], groundSize, groundSize);
                 e[0] -= moveSpeed;
             });
             for (var i = 0; i < 4; i++) {
