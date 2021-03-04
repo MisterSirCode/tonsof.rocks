@@ -192,8 +192,8 @@
         } else if (gameState == "game") {
             ctx.save();
             ctx.imageSmoothingEnabled = false;
-            let currentPos = groundSize;
-                currentPos -= moveSpeed;
+            currentPos = groundSize;
+            currentPos -= moveSpeed;
             if (currentPos <= 0) {
                 groundBlocks.push([cvs.width, cvs.height - groundSize]);
                 currentPos = groundSize;
