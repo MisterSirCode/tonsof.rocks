@@ -60,7 +60,7 @@
         }
 
         canvas {
-            margin-left: 25%;
+            /* margin-left: 25%; */
         }
     </style>
 </head>
@@ -81,7 +81,7 @@
     let currentSkyPos = [0, 0, 0];
     let groundSize = 0;
     let skySize = 0;
-    let moveSpeed = 8;
+    let moveSpeed = 7;
     let skyMoveSpeed = moveSpeed / 8;
     let gameStartTimer = 3;
     
@@ -173,7 +173,7 @@
                 ctx.imageSmoothingEnabled = false;
                 for (var i = 0; i < 4; i++) {
                     currentGroundPos[i] -= moveSpeed;
-                    if (currentGroundPos[i] <= -groundSize) currentGroundPos[i] = 3 * groundSize - moveSpeed - 0.5;
+                    if (currentGroundPos[i] <= -groundSize) currentGroundPos[i] = 3 * groundSize - moveSpeed ;
                     ctx.drawImage(groundImage, currentGroundPos[i], cvs.height - groundSize, groundSize, groundSize);
                 }
                 for (var i = 0; i < 4; i++) {
