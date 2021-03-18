@@ -4,6 +4,16 @@
 	--back-color-brighter: #303030;
 }
 
+* {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+    box-sizing: border-box;
+}
+
 body {
 	padding: 0;
 	margin: 0;
