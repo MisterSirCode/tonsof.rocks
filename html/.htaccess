@@ -36,4 +36,7 @@ RewriteRule ^projects/([\w-]+)$ projects-dir/Pages/$1.html [L]
 # Rewrite "https://www.mistersircode.com/..." to "https://mistersircode.com/..." if it exists
 RewriteCond %{HTTP_HOST} ^www\.
 RewriteRule ^(.*)$ http://mistersircode.com/$1 [R=301,L]
- 
+
+# Force https
+RewriteCond %{HTTPS} off 
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
