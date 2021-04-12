@@ -76,7 +76,7 @@
 		<div class="overlay"></div>
 		<div class="description">
 			<h1>Art and Models</h1>
-			<p>Renders, drawings, 3D models, and other miscellaneous art I've created.<br>
+			<p>Renders, Drawings, 3D Models, and other miscellaneous art I've created.<br>
 				Scroll down for more information</p>
 			<br>
 			<h6>Background Arts by <a href="https://www.pexels.com/@earano">Emiliano Arano</a></h6>
@@ -85,7 +85,12 @@
 	<div class="container features">
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<h3 class="feature-title">Fox Sketch</h3>
+				<h3 class="feature-title">The Greatest Blade</h3>
+				<img src="../Images/Art/netherite_sword.png" class="img-fluid">
+				<p>A 3D Rendition of a Netherite Sword from Minecraft. Just did this for fun.</p>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<h3 class="feature-title">Pencilfox 2018</h3>
 				<img src="../Images/Art/FoxSketch.png" class="img-fluid">
 				<p>(Copyrighted) One of my first Digital Only drawings. Originally based off of a wolf, but adapted into a drawing of a fox.</p>
 			</div>
@@ -95,12 +100,12 @@
 				<p>This was a 3D Rendered Mandelbrot Fractal. Created using immense complex formulea and subsurface materials I created.</p>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<h3 class="feature-title">The Old Eye</h3>
+				<h3 class="feature-title">The Eye 2019</h3>
 				<img src="../Images/Art/EyeSketch.png" class="img-fluid">
 				<p>(Copyrighted) One of my more recent sketches. Based off a photo of a human eye socket.</p>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<h3 class="feature-title">HOT</h3>
+				<h3 class="feature-title">H O T</h3>
 				<img src="../Images/Art/Hot.png" class="img-fluid">
 				<p>A 3D rendered "Sun" of some sort. It was less of a creation and more of an accident, but I still love the design</p>
 			</div>
