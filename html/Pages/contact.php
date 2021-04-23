@@ -21,20 +21,20 @@
 
 	<!-- Primary Meta Tags -->
 	<title>SirCodes Contacts</title>
-	<meta name="title" content="SirCodes Contacts">
-	<meta name="description" content="Main website for my Projects and Portfolio">
+	<meta name="title" content="SirCode's Contacts">
+	<meta name="description" content="(If you need to contact me for whatever reason)">
 	<meta name="theme-color" content="#ffffff">
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="SirCodes Contacts">
-	<meta property="og:description" content="Main website for my Projects and Portfolio">
+	<meta property="og:title" content="SirCode's Contacts">
+	<meta property="og:description" content="(If you need to contact me for whatever reason)">
 	<meta property="og:image" content="https://mistersircode.com/Images/SCLOGOSmall.png">
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image">
-	<meta property="twitter:title" content="SirCodes Contacts">
-	<meta property="twitter:description" content="Main website for my Projects and Portfolio">
+	<meta property="twitter:title" content="SirCode's Contacts">
+	<meta property="twitter:description" content="(If you need to contact me for whatever reason)">
 	<meta property="twitter:image" content="https://mistersircode.com/Images/SCLOGOSmall.png">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
 		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -68,6 +68,9 @@
 				</li>
 				<li class="nav-item">
 					<a class="nav-link">Contact</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../deepworld">Deepworld</a>
 				</li>
 			</ul>
 		</div>
