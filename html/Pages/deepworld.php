@@ -20,21 +20,21 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="../Icons/favicon-16x16.png">
 
 	<!-- Primary Meta Tags -->
-	<title>Example Page</title>
-	<meta name="title" content="Example Page">
-	<meta name="description" content="Main website for my Projects and Portfolio">
+	<title>Deepworld Remastered</title>
+	<meta name="title" content="SirCode's Game">
+	<meta name="description" content="Preview page for my game">
 	<meta name="theme-color" content="#ffffff">
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="Example Page">
-	<meta property="og:description" content="Main website for my Projects and Portfolio">
+	<meta property="og:title" content="SirCode's Game">
+	<meta property="og:description" content="Preview page for my game">
 	<meta property="og:image" content="https://mistersircode.com/Images/SCLOGOSmall.png">
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image">
-	<meta property="twitter:title" content="Example Page">
-	<meta property="twitter:description" content="Main website for my Projects and Portfolio">
+	<meta property="twitter:title" content="SirCode's Game">
+	<meta property="twitter:description" content="Preview page for my game">
 	<meta property="twitter:image" content="https://mistersircode.com/Images/SCLOGOSmall.png">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
 		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
