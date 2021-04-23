@@ -38,10 +38,12 @@
 	<meta property="twitter:image" content="https://mistersircode.com/Images/SCLOGOSmall.png">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
 		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-	<style>
-
-	</style>
 	<link rel="stylesheet" href="../Stylesheets/index.css">
+	<style>
+		.header {
+			background-image: url(../Images/Splash.png);
+		}
+	</style>
 </head>
 
 <body>
@@ -67,7 +69,10 @@
 					<a class="nav-link" href="../portfolio">Portfolio</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link">Contact</a>
+					<a class="nav-link" href="../contact">Contact</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link">Deepworld</a>
 				</li>
 			</ul>
 		</div>
@@ -75,10 +80,11 @@
 	<header class="page-header header container-fluid">
 		<div class="overlay"></div>
 		<div class="description">
-			<h1>Example Page</h1>
-			<p>Example Page with no content. Nothing to see here.</p>
-			<br>
-			<h6>Background Art by <a href="https://www.pexels.com/@earano">Emiliano Arano</a></h6>
+			<h1>Deepworld Remastered</h1>
+			<p>
+				Deepworld Remastered is a WIP MMORPG based on the massively-multiplayer "Deepworld" by Bytebin LLC<br>
+				Check out more at the <a href="https://deepworld-remastered.com">Deepworld Remastered Website</a>
+			</p>
 		</div>
 	</header>
 	<footer class="page-footer">
