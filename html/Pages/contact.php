@@ -82,6 +82,25 @@
 			<h6>Background Art by <a href="https://www.pexels.com/@earano">Emiliano Arano</a></h6>
 		</div>
 	</header>
+	<div class="container features">
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<h3 class="feature-title">Contact me Digitally</h3>
+				<p>
+					You can contact me through several platforms, either through my Discord (Sir Code#6760), my Discord Server (unavailable),
+					Steam (MisterSirCode), or Reddit (u/SkylerSpark / MisterSirCode). I potentially won't answer from those locations, as
+					Discord is mainly where I spend the most time.
+				</p>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<h3 class="feature-title">Contact me Face to Face</h3>
+				<p>
+					I do not currently support any face-to-face meetings, but eventually that will be available. I can however do face-to-face calls or
+					Discord calls if neccessary. (See the digital contacts area before)
+				</p>
+			</div>
+		</div> 
+	</div>
 	<footer class="page-footer">
 		<div class="footer-copyright text-center">Copyright © 2021</div>
 		<div class="footer-copyright text-center">Owned and Distributed by Taylor Schneider</div>
