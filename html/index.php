@@ -75,7 +75,7 @@
 			</ul>
 		</div>
 	</nav>
-	<header class="page-header header container-fluid">
+	<div class="page-header header container-fluid">
 		<div class="overlay"></div>
 		<div class="description">
 			<h1>Welcome to Mister SirCode's Homepage</h1>
@@ -83,7 +83,7 @@
 			<br>
 			<h6>Background Arts by <a href="https://www.pexels.com/@earano">Emiliano Arano</a></h6>
 		</div>
-	</header>
+	</div>
 	<footer class="page-footer">
 		<div class="footer-copyright text-center">Copyright © 2021</div>
 		<div class="footer-copyright text-center">Owned and Distributed by Taylor Schneider</div>
