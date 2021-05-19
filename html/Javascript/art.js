@@ -17,8 +17,7 @@ const artPieces = [
 ];
 
 function loadArtPieces(element, artPath) {
-    for (var i = artPieces.length; i > 0; --i) {
-		console.log(i);
+    for (var i = artPieces.length - 1; i >= 0; --i) {
         const currentArtPiece = artPieces[i];
         const rowElm = document.createElement("div");
         rowElm.classList.add("col-lg-4", "col-md-4", "col-sm-12");
