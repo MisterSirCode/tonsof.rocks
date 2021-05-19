@@ -71,46 +71,6 @@
 	<div class="container features">
 		<div class="row">
 			<!-- Art will be generated dynamically -->
-			<div class="col-lg-4 col-md-4 col-sm-12">
-				<h3 class="feature-title">The Greatest Blade</h3>
-				<img src="../Images/Art/netherite_sword.png" class="img-fluid">
-				<p>A 3D Rendition of a Netherite Sword from Minecraft. Just did this for fun.</p>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-12">
-				<h3 class="feature-title">Pencilfox 2018</h3>
-				<img src="../Images/Art/FoxSketch.png" class="img-fluid">
-				<p>(Copyrighted) One of my first Digital Only drawings. Originally based off of a wolf, but adapted into a drawing of a fox.</p>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-12">
-				<h3 class="feature-title">Mandelbulb</h3>
-				<img src="../Images/Art/Mandelbulb.png" class="img-fluid">
-				<p>This was a 3D Rendered Mandelbrot Fractal. Created using immense complex formulea and subsurface materials I created.</p>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-12">
-				<h3 class="feature-title">The Eye 2019</h3>
-				<img src="../Images/Art/EyeSketch.png" class="img-fluid">
-				<p>(Copyrighted) One of my more recent sketches. Based off a photo of a human eye socket.</p>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-12">
-				<h3 class="feature-title">H O T</h3>
-				<img src="../Images/Art/Hot.png" class="img-fluid">
-				<p>A 3D rendered "Sun" of some sort. It was less of a creation and more of an accident, but I still love the design</p>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-12">
-				<h3 class="feature-title">Coldrock</h3>
-				<img src="../Images/Art/Cold Rock.png" class="img-fluid">
-				<p>Coldrock was a small 3D Planet Project to create a fully procedural rocky moon.</p>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-12">
-				<h3 class="feature-title">Deserted</h3>
-				<img src="../Images/Art/Deserted.png" class="img-fluid">
-				<p>This was one of my first attempts at true photo-realism in 3D Art</p>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-12">
-				<h3 class="feature-title">Futuretire</h3>
-				<img src="../Images/Art/FutureTire.png" class="img-fluid">
-				<p>A futuristic vehicle tire / wheel, built using hard surface modeling and a lot of extra time.</p>
-			</div>
 		</div> 
 	</div>
 	<footer class="page-footer">
