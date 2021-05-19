@@ -70,6 +70,7 @@
 	</header>
 	<div class="container features">
 		<div class="row">
+			<!-- Art will be generated dynamically -->
 			<div class="col-lg-4 col-md-4 col-sm-12">
 				<h3 class="feature-title">The Greatest Blade</h3>
 				<img src="../Images/Art/netherite_sword.png" class="img-fluid">
@@ -127,6 +128,9 @@
 	integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
 </script>
 <script src="../Javascript/art.js"></script>
+<script>
+	loadArtPieces(".row", "../Art/");
+</script>
 <script src="../Javascript/template.js"></script>
 <script>
 	loadWebLinks(".navbar-nav", "../", "art");
