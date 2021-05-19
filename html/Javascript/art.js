@@ -8,7 +8,12 @@ const artPieces = [
 	["Primordial", "primordial.jpg"],
 	["Infinite Jellyfish", "infinitejelly.jpg"],
 	["The Old Eye", "eyesketch.jpg"],
-	["The Greatest Blade", "greatestblade.jpg"]
+	["The Greatest Blade", "greatestblade.jpg"],
+	["Sapphire Planet", "sapphireplanet.jpg"],
+	["Magmatic Planetoid", "magmaticball.jpg"],
+	["Never Cat", "nevercat.jpg"],
+	["Emerald of the 4th Dimension", "fouremerald.jpg"],
+	["The Last Palm", "lastpalm.jpg"]
 ];
 
 function loadArtPieces(element, artPath) {
