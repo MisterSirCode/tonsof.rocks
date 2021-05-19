@@ -2,7 +2,7 @@ const webLinks = {
     "home": ["/", "Home"],
     "projects": ["/projects", "Projects"],
     "art": ["/art", "Art"],
-    "portfolio": ["/portfolio", "Portfolio"]
+    "portfolio": ["/portfolio", "Portfolio"],
     "contact": ["/contact", "Contact"],
     "deepworld": ["/deepworld", "Deepworld"]
 };
