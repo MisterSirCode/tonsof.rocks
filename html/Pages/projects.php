@@ -54,24 +54,7 @@
 		</button>
 		<div class="collapse navbar-collapse" id="main-navigation">
 			<ul class="navbar-nav">
-				<li class="nav-item">
-					<a class="nav-link" href="../">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="">Projects</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="../art">Art</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="../portfolio">Portfolio</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="../contact">Contact</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="../deepworld">Deepworld</a>
-				</li>
+				<!-- Template stuff will be generated Here -->
 			</ul>
 		</div>
 	</nav>
@@ -119,6 +102,10 @@
 </script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
 	integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+</script>
+<script src="../Javascript/template.js"></script>
+<script>
+	loadWebLinks(".navbar-nav", "../", "projects");
 </script>
 
 </html>

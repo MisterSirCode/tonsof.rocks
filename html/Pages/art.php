@@ -129,6 +129,6 @@
 <script src="../Javascript/art.js"></script>
 <script src="../Javascript/template.js"></script>
 <script>
-	loadWebLinks()
+	loadWebLinks(".navbar-nav", "../", "art");
 </script>
 </html>
