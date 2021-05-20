@@ -1,10 +1,10 @@
 const webLinks = {
-    "home": ["/", "Home"],
-    "projects": ["/projects", "Projects"],
-    "art": ["/art", "Art"],
-    "portfolio": ["/portfolio", "Portfolio"],
-    "contact": ["/contact", "Contact"],
-    "deepworld": ["/deepworld", "Deepworld"]
+    "home": ["", "Home"],
+    "projects": ["projects", "Projects"],
+    "art": ["art", "Art"],
+    "portfolio": ["portfolio", "Portfolio"],
+    "contact": ["contact", "Contact"],
+    "deepworld": ["deepworld", "Deepworld"]
 };
 
 function loadWebLinks(element, socket, currentPage) {
