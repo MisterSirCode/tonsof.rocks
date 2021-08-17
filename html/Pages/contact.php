@@ -73,8 +73,8 @@
 			<div class="col-lg-4 col-md-4 col-sm-12">
 				<h3 class="feature-title">Contact me Digitally</h3>
 				<p>
-					You can contact me through several platforms, either through my Discord (Sir Code#6760), my Discord Server (unavailable),
-					Steam (MisterSirCode), or Reddit (u/SkylerSpark / MisterSirCode). I potentially won't answer from those locations, as
+					You can contact me through several platforms, either through my Discord <b>(Sir Code#0001)</b>, my Discord Server <b><a href="https://discord.gg/6bv6Z6f">here</a></b>,
+					Steam <b>(skylerspark1 / MisterSirCode)</b>, or Reddit <b>(u/SkylerSpark / MisterSirCode)</b>. I potentially won't answer from those locations, as
 					Discord is mainly where I spend the most time.
 				</p>
 			</div>
@@ -90,6 +90,7 @@
 	<footer class="page-footer">
 		<div class="footer-copyright text-center">Copyright © 2021</div>
 		<div class="footer-copyright text-center">Owned and Distributed by Taylor Schneider</div>
+		<div class="footer-copyright text-center">Hosted with love by AWS Elastic Beanstalk</div>
 	</footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

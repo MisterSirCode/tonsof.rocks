@@ -12,8 +12,13 @@ const artPieces = [
 	["Sapphire Planet", "sapphireplanet.jpg"],
 	["Magmatic Planetoid", "magmaticball.jpg"],
 	["Never Cat", "nevercat.jpg"],
+	["Coldroom", "coldroom.jpg"],
 	["Emerald of the 4th Dimension", "fouremerald.jpg"],
-	["The Last Palm", "lastpalm.jpg"]
+	["The Last Palm", "lastpalm.jpg"],
+	["Nether Portal", "netherportal.jpg"],
+	["The Leo", "leo.jpg"],
+	["An Underrated Rock", "moon.jpg"],
+	["Nova Clara Centrum", "blackhole.jpg"]
 ];
 
 function loadArtPieces(element, artPath) {

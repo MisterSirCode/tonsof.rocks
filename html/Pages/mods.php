@@ -83,6 +83,7 @@
 	<footer class="page-footer">
 		<div class="footer-copyright text-center">Copyright © 2021</div>
 		<div class="footer-copyright text-center">Owned and Distributed by Taylor Schneider</div>
+		<div class="footer-copyright text-center">Hosted with love by AWS Elastic Beanstalk</div>
 	</footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
