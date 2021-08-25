@@ -1,11 +1,11 @@
 const webLinks = {
-    "home": ["", "Home", false],
-    "projects": ["projects", "Projects", true],
-    "mods": ["mods", "Mods", true],
-    "art": ["art", "Art", true],
-    "portfolio": ["portfolio", "Portfolio", true],
-    "contact": ["contact", "Contact", true],
-    "deepworld": ["deepworld", "Deepworld", true]
+    "home": ["", "Home"],
+    "projects": ["projects", "Projects", true, true],
+    "mods": ["mods", "Mods", true, true],
+    "art": ["art", "Art", true, true],
+    "portfolio": ["portfolio", "Portfolio", true, true],
+    "contact": ["contact", "Contact", true, true],
+    "deepworld": ["deepworld", "Deepworld", true, true]
 };
 const rewriteLinksOn = false;
 
@@ -21,7 +21,7 @@ function loadWebLinks(element, socket, currentPage) {
             if (rewriteLinksOn)
                 linkElement.href = `${socket}${currentWebLink[0]}`;
             else
-                linkElement.href = `${socket}Pages/${currentWebLink[0]}${currentWebLink[2] ? ".html" : ""}`;
+                linkElement.href = `${socket}${currentWebLink[2] ? "Pages" : ""}/${currentWebLink[0]}${currentWebLink[3] ? ".html" : ""}`;
         linkElement.innerText = currentWebLink[1];
         listElement.appendChild(linkElement);
         document.querySelector(element).appendChild(listElement);
