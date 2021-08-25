@@ -15,7 +15,8 @@ function loadWebLinks(element, socket, currentPage) {
         const listElement = document.createElement("li");
         listElement.classList.add("nav-item");
         const linkElement = document.createElement("a");
-        linkElement.classList.add("nav-link");
+        linkElement.classList.add("nav-link"
+        );
         if (Object.keys(webLinks)[i] != currentPage)
             if (rewriteLinksOn)
                 linkElement.href = `${socket}${currentWebLink[0]}`;
