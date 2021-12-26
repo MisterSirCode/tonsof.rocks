@@ -2,10 +2,9 @@ const webLinks = {
     "home": ["", "Home"],
     "projects": ["projects", "Projects", true, true],
     "mods": ["mods", "Mods", true, true],
-    "art": [true, "https://sircode.artstation.com/projects", "Art"],
     "portfolio": ["portfolio", "Portfolio", true, true],
     "contact": ["contact", "Contact", true, true],
-    "deepworld": ["deepworld", "Deepworld", true, true]
+    "art": [true, "https://sircode.artstation.com/projects", "Artstation"]
 };
 const rewriteLinksOn = false;
 
