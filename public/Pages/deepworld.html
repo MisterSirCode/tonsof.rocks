@@ -20,28 +20,30 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="../Icons/favicon-16x16.png">
 
 	<!-- Primary Meta Tags -->
-	<title>SirCodes Projects</title>
-	<meta name="title" content="SirCode's Mods">
-	<meta name="description" content="Cheats and Game Modifications and things Ive made">
+	<title>Deepworld Remastered</title>
+	<meta name="title" content="SirCode's Game">
+	<meta name="description" content="Preview page for my game">
 	<meta name="theme-color" content="#ffffff">
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="SirCode's Mods">
-	<meta property="og:description" content="Cheats and Game Modifications and things Ive made">
+	<meta property="og:title" content="SirCode's Game">
+	<meta property="og:description" content="Preview page for my game">
 	<meta property="og:image" content="https://mistersircode.com/Images/SCLOGOSmall.png">
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image">
-	<meta property="twitter:title" content="SirCode's Mods">
-	<meta property="twitter:description" content="Cheats and Game Modifications and things Ive made">
+	<meta property="twitter:title" content="SirCode's Game">
+	<meta property="twitter:description" content="Preview page for my game">
 	<meta property="twitter:image" content="https://mistersircode.com/Images/SCLOGOSmall.png">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
 		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-	<style>
-
-	</style>
 	<link rel="stylesheet" href="../Stylesheets/index.css">
+	<style>
+		.header {
+			background-image: url(../Images/Splash.png);
+		}
+	</style>
 </head>
 
 <body>
@@ -61,29 +63,15 @@
 	<header class="page-header header container-fluid">
 		<div class="overlay"></div>
 		<div class="description">
-			<h1>Mods</h1>
-			<p>THIS PAGE IS UNDER CONSTRUCTION<br>NOTHING IS FUNCTIONAL AT THE MOMENT!</p>
-			<p>All my modifications, cheats or other kinds of custom configurations and tools for games / applications</p>
-			<p>DISCLAIMER: I am <u>NOT</u> liable or responsible for punishments you may recieve for using cheats or mods.</p>
-			<br>
-			<h6>Background Arts by <a href="https://www.pexels.com/@earano">Emiliano Arano</a></h6>
+			<h1>Deepworld Remastered</h1>
+			<p>
+				Deepworld Remastered is a WIP MMORPG based on the massively-multiplayer "Deepworld" by Bytebin LLC<br>
+				Check out more at the <a href="https://deepworld-remastered.com">Deepworld Remastered Website</a>
+			</p>
 		</div>
 	</header>
-	<div class="container features">
-		<h3 class="centered-title-feature">Click a project image to see more info about the project</h3>
-		<br><br>
-		<div class="row">
-			<div class="col-lg-4 col-md-4 col-sm-12">
-				<h3 class="feature-title">Terraria</h3>
-				<a href=""><img src="../Mods/Terraria.png" class="img-fluid"></a>
-				<p>A collection of modifications for Terraria 1.4.2.3</p>
-			</div>
-		</div> 
-	</div>
 	<footer class="page-footer">
-		<div class="footer-copyright text-center">Copyright © 2021</div>
-		<div class="footer-copyright text-center">Owned and Distributed by Taylor Schneider</div>
-		<div class="footer-copyright text-center">Hosted with love by AWS Elastic Beanstalk</div>
+		<!-- Template stuff will be generated Here -->
 	</footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -97,7 +85,8 @@
 </script>
 <script src="../Javascript/template.js"></script>
 <script>
-	loadWebLinks(".navbar-nav", "../", "projects");
+	loadCopyright(".page-footer");
+	loadWebLinks(".navbar-nav", "../", "deepworld");
 </script>
 
 </html>

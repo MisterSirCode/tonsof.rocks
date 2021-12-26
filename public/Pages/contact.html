@@ -20,21 +20,21 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="../Icons/favicon-16x16.png">
 
 	<!-- Primary Meta Tags -->
-	<title>SirCodes Art</title>
-	<meta name="title" content="Mister SirCode's Art">
-	<meta name="description" content="Art and Rendering Page">
+	<title>SirCodes Contacts</title>
+	<meta name="title" content="SirCode's Contacts">
+	<meta name="description" content="(If you need to contact me for whatever reason)">
 	<meta name="theme-color" content="#ffffff">
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="Mister SirCode's Art">
-	<meta property="og:description" content="Art and Rendering Page">
+	<meta property="og:title" content="SirCode's Contacts">
+	<meta property="og:description" content="(If you need to contact me for whatever reason)">
 	<meta property="og:image" content="https://mistersircode.com/Images/SCLOGOSmall.png">
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image">
-	<meta property="twitter:title" content="Mister SirCode's Art">
-	<meta property="twitter:description" content="Art and Rendering Page">
+	<meta property="twitter:title" content="SirCode's Contacts">
+	<meta property="twitter:description" content="(If you need to contact me for whatever reason)">
 	<meta property="twitter:image" content="https://mistersircode.com/Images/SCLOGOSmall.png">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
 		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -61,22 +61,34 @@
 	<header class="page-header header container-fluid">
 		<div class="overlay"></div>
 		<div class="description">
-			<h1>Art and Models</h1>
-			<p>Renders, Drawings, 3D Models, and other miscellaneous art I've created.<br>
+			<h1>Contact Page</h1>
+			<p>Contact info if you're curious about something, or want to request my services.<br>
 				Scroll down for more information</p>
 			<br>
-			<h6>Background Arts by <a href="https://www.pexels.com/@earano">Emiliano Arano</a></h6>
+			<h6>Background Art by <a href="https://www.pexels.com/@earano">Emiliano Arano</a></h6>
 		</div>
 	</header>
 	<div class="container features">
 		<div class="row">
-			<!-- Art will be generated dynamically -->
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<h3 class="feature-title">Contact me Digitally</h3>
+				<p>
+					You can contact me through several platforms, either through my Discord <b>(Sir Code#0001)</b>, my Discord Server <b><a href="https://discord.gg/6bv6Z6f">here</a></b>,
+					Steam <b>(skylerspark1 / MisterSirCode)</b>, or Reddit <b>(u/SkylerSpark / MisterSirCode)</b>. I potentially won't answer from those locations, as
+					Discord is mainly where I spend the most time.
+				</p>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<h3 class="feature-title">Contact me Face to Face</h3>
+				<p>
+					I do not currently support any face-to-face meetings, but eventually that will be available. I can however do face-to-face calls or
+					Discord calls if neccessary. (See the digital contacts area before)
+				</p>
+			</div>
 		</div> 
 	</div>
 	<footer class="page-footer">
-		<div class="footer-copyright text-center">Copyright © 2021</div>
-		<div class="footer-copyright text-center">Owned and Distributed by Taylor Schneider</div>
-		<div class="footer-copyright text-center">Hosted with love by AWS Elastic Beanstalk</div>
+		<!-- Template stuff will be generated Here -->
 	</footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -88,12 +100,10 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
 	integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
 </script>
-<script src="../Javascript/art.js"></script>
-<script>
-	loadArtPieces(".row", "../Art/");
-</script>
 <script src="../Javascript/template.js"></script>
 <script>
-	loadWebLinks(".navbar-nav", "../", "art");
+	loadCopyright(".page-footer");
+	loadWebLinks(".navbar-nav", "../", "contact");
 </script>
+
 </html>

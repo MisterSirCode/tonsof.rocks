@@ -9,14 +9,19 @@ const webLinks = {
 };
 const rewriteLinksOn = false;
 
+const copyrightLines = [
+    "Copyright © 2022",
+    "Owned and Distributed by Taylor Schneider",
+    "Hosted with love by Google Firebase"
+]
+
 function loadWebLinks(element, socket, currentPage) {
     for (var i = 0; i < Object.keys(webLinks).length; ++i) {
         const currentWebLink = webLinks[Object.keys(webLinks)[i]];
         const listElement = document.createElement("li");
         listElement.classList.add("nav-item");
         const linkElement = document.createElement("a");
-        linkElement.classList.add("nav-link"
-        );
+        linkElement.classList.add("nav-link");
         if (Object.keys(webLinks)[i] != currentPage)
             if (rewriteLinksOn)
                 linkElement.href = `${socket}${currentWebLink[0]}`;
@@ -26,4 +31,15 @@ function loadWebLinks(element, socket, currentPage) {
         listElement.appendChild(linkElement);
         document.querySelector(element).appendChild(listElement);
     }
+}
+
+function loadCopyright(element) {
+    let sel = document.querySelector(element);
+    copyrightLines.forEach((e) => {
+        const elm = document.createElement("div");
+        elm.classList.add("footer-copyright");
+        elm.classList.add("text-center");
+        elm.innerText = e;
+        sel.appendChild(elm);
+    });
 }

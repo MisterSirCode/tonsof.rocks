@@ -20,21 +20,21 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="../Icons/favicon-16x16.png">
 
 	<!-- Primary Meta Tags -->
-	<title>SirCodes Contacts</title>
-	<meta name="title" content="SirCode's Contacts">
-	<meta name="description" content="(If you need to contact me for whatever reason)">
+	<title>SirCodes Portfolio</title>
+	<meta name="title" content="SirCode's Portfolio">
+	<meta name="description" content="If you want to see what I'm capable of">
 	<meta name="theme-color" content="#ffffff">
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="SirCode's Contacts">
-	<meta property="og:description" content="(If you need to contact me for whatever reason)">
+	<meta property="og:title" content="SirCode's Portfolio">
+	<meta property="og:description" content="If you want to see what I'm capable of">
 	<meta property="og:image" content="https://mistersircode.com/Images/SCLOGOSmall.png">
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image">
-	<meta property="twitter:title" content="SirCode's Contacts">
-	<meta property="twitter:description" content="(If you need to contact me for whatever reason)">
+	<meta property="twitter:title" content="SirCode's Portfolio">
+	<meta property="twitter:description" content="If you want to see what I'm capable of">
 	<meta property="twitter:image" content="https://mistersircode.com/Images/SCLOGOSmall.png">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
 		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -61,8 +61,8 @@
 	<header class="page-header header container-fluid">
 		<div class="overlay"></div>
 		<div class="description">
-			<h1>Contact Page</h1>
-			<p>Contact info if you're curious about something, or want to request my services.<br>
+			<h1>My Portfolio</h1>
+			<p>Things I know, have accomplished, or am currently working on.<br>
 				Scroll down for more information</p>
 			<br>
 			<h6>Background Art by <a href="https://www.pexels.com/@earano">Emiliano Arano</a></h6>
@@ -71,26 +71,37 @@
 	<div class="container features">
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<h3 class="feature-title">Contact me Digitally</h3>
+				<h3 class="feature-title">Skills and History</h3>
 				<p>
-					You can contact me through several platforms, either through my Discord <b>(Sir Code#0001)</b>, my Discord Server <b><a href="https://discord.gg/6bv6Z6f">here</a></b>,
-					Steam <b>(skylerspark1 / MisterSirCode)</b>, or Reddit <b>(u/SkylerSpark / MisterSirCode)</b>. I potentially won't answer from those locations, as
-					Discord is mainly where I spend the most time.
+					I mainly study Javascript and C#. I've been working with HTML / CSS / JS for over 4 years now,
+					and I've taken several free courses on the subjects. As for C#, I've mostly learned through
+					solitary research and self teaching. However, I did take a course from IDTech on 
+					C# and Unity Game Development. I understand many smaller subjects, such as minor knowledge of C++,
+					Lua, LuaC, Node.JS (Specifically Discord.JS and Electron.JS), and even a bit a Java.
 				</p>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<h3 class="feature-title">Contact me Face to Face</h3>
+				<h3 class="feature-title">Other Skills and Accomplishments</h3>
 				<p>
-					I do not currently support any face-to-face meetings, but eventually that will be available. I can however do face-to-face calls or
-					Discord calls if neccessary. (See the digital contacts area before)
+					Besides programming, I've also extensively studied Design and Artistry. I've hand painted and
+					sketched many pieces of high quality art. You can find some of them on the Art page. I've also
+					learned a ton about 3D Modeling, Color, Raytracing, Graphics and things related to 3D Rendering.
+					You can also find a lot of my 3D renders on the Art page.
+				</p>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12">
+				<h3 class="feature-title">Current Biggest Projects</h3>
+				<p>
+					Currently my most anticipated project is easily "Deepworld Remastered", which is a WIP 2D Game
+					based upon the Massively-Multiplayer MMORPG "Deepworld" created by Bytebin Studios (Jason and Laurence).
+					I'm also currently working on a highly advanced API-Integrated Discord Bot called "Android Arthur V2", which
+					has moderation and community tools to assist in managing Discord Guilds.
 				</p>
 			</div>
 		</div> 
 	</div>
 	<footer class="page-footer">
-		<div class="footer-copyright text-center">Copyright © 2021</div>
-		<div class="footer-copyright text-center">Owned and Distributed by Taylor Schneider</div>
-		<div class="footer-copyright text-center">Hosted with love by AWS Elastic Beanstalk</div>
+		<!-- Template stuff will be generated Here -->
 	</footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -104,7 +115,8 @@
 </script>
 <script src="../Javascript/template.js"></script>
 <script>
-	loadWebLinks(".navbar-nav", "../", "contact");
+	loadCopyright(".page-footer");
+	loadWebLinks(".navbar-nav", "../", "portfolio");
 </script>
 
 </html>
