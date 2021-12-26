@@ -2,7 +2,7 @@ const webLinks = {
     "home": ["", "Home"],
     "projects": ["projects", "Projects", true, true],
     "mods": ["mods", "Mods", true, true],
-    "art": ["art", "Art", true, true],
+    "art": [true, "https://sircode.artstation.com/projects", "Art"],
     "portfolio": ["portfolio", "Portfolio", true, true],
     "contact": ["contact", "Contact", true, true],
     "deepworld": ["deepworld", "Deepworld", true, true]
@@ -22,12 +22,18 @@ function loadWebLinks(element, socket, currentPage) {
         listElement.classList.add("nav-item");
         const linkElement = document.createElement("a");
         linkElement.classList.add("nav-link");
-        if (Object.keys(webLinks)[i] != currentPage)
-            if (rewriteLinksOn)
-                linkElement.href = `${socket}${currentWebLink[0]}`;
-            else
-                linkElement.href = `${socket}${currentWebLink[2] ? "Pages/" : ""}${currentWebLink[0]}${currentWebLink[3] ? ".html" : ""}`;
-        linkElement.innerText = currentWebLink[1];
+        if (typeof currentWebLink[0] == "boolean") {
+            linkElement.target = "_blank";
+            linkElement.href = currentWebLink[1];
+            linkElement.innerText = currentWebLink[2];
+        } else {
+            if (Object.keys(webLinks)[i] != currentPage)
+                if (rewriteLinksOn)
+                    linkElement.href = `${socket}${currentWebLink[0]}`;
+                else
+                    linkElement.href = `${socket}${currentWebLink[2] ? "Pages/" : ""}${currentWebLink[0]}${currentWebLink[3] ? ".html" : ""}`;
+            linkElement.innerText = currentWebLink[1];
+        }
         listElement.appendChild(linkElement);
         document.querySelector(element).appendChild(listElement);
     }
