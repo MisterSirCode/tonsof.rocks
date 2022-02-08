@@ -1,9 +1,9 @@
 const projects = [
-	["Android Arthur", "NoLogo.png", true, "https://discordapp.com/oauth2/authorize?&client_id=731617199877521508&scope=bot", 
+	["Android Arthur", "NoLogo.png", false, "https://discordapp.com/oauth2/authorize?&client_id=731617199877521508&scope=bot", 
         "This is a high quality Discord Bot that I'm building, it's main focus is working as an interconnected API for my game. However, it also contains many high quality commands and moderation tools useful for any server"],
-    ["Arctan Meridian", "NoLogo.png", true, "https://www.npmjs.com/package/arctan.meridian",
+    ["Arctan Meridian", "NoLogo.png", false, "https://www.npmjs.com/package/arctan.meridian",
         "Arctan Meridian is a Vector and Color API for NodeJS / Electron. It contains quite a few utilities for Vector Math"],
-    ["Arctan Paper", "NoLogo.png", true, "https://www.npmjs.com/package/arctan.paper",
+    ["Arctan Paper", "NoLogo.png", false, "https://www.npmjs.com/package/arctan.paper",
         "Arctan Paper is a Canvas Extension API for Electron, it has many useful tools and functions to extend the use of the normal canvas/"]
 ];
 
@@ -16,7 +16,7 @@ function loadProjects(element, imagePath) {
         imgTitleElm.classList.add("feature-title");
         imgTitleElm.innerText = currentProject[0];
         const linkElm = document.createElement("a");
-        if (currentProject[2]) {
+        if (currentProject[3]) {
             linkElm.href = currentProject[3];
             linkElm.target = "_blank";
         }
