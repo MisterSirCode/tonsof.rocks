@@ -42,7 +42,7 @@ body * {
 
 .header {
 	background-color: rgb(255, 255, 255);
-	background-image: url(../Images/twilight845.jpg);
+	background-image: url(../Images/bgSmall.png);
 	background-size: cover;
 	background-position: center;
 	position: relative;
