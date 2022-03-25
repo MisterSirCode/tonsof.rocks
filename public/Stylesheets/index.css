@@ -15,6 +15,7 @@
 }
 
 body {
+	background: var(--back-color);
 	padding: 0;
 	margin: 0;
 }
@@ -97,6 +98,10 @@ body * {
 	color: rgba(255, 255, 255, 0.8);
 }
 
+.centered-title-feature {
+	color: var(--text-color);
+}
+
 .features {
 	margin: 4em auto;
 	padding: 1em;
@@ -104,7 +109,7 @@ body * {
 }
 
 .feature-title {
-	color: #333;
+	color: var(--text-color);
 	font-size: 1.3rem;
 	font-weight: 700;
 	margin-bottom: 20px;
@@ -116,6 +121,10 @@ body * {
 	-moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 	margin-bottom: 16px;
+}
+
+.features p {
+	color: var(--text-color);
 }
 
 .features img.round {
