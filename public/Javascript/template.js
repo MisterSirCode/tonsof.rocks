@@ -26,7 +26,13 @@ function loadWebLinks(element, socket, currentPage) {
             linkElement.href = currentWebLink[1];
             linkElement.innerText = currentWebLink[2];
         } else {
-            if (Object.keys(webLinks)[i] != currentPage)
+            if (currentPage)
+                if (Object.keys(webLinks)[i] != currentPage)
+                    if (rewriteLinksOn)
+                        linkElement.href = `${socket}${currentWebLink[0]}`;
+                    else
+                        linkElement.href = `${socket}${currentWebLink[2] ? "Pages/" : ""}${currentWebLink[0]}${currentWebLink[3] ? ".html" : ""}`;
+            else
                 if (rewriteLinksOn)
                     linkElement.href = `${socket}${currentWebLink[0]}`;
                 else
