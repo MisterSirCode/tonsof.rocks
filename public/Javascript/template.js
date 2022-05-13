@@ -10,8 +10,7 @@ const rewriteLinksOn = false;
 
 const copyrightLines = [
     "Copyright © 2022",
-    "Owned and Distributed by Taylor Schneider",
-    "Hosted with love by Google Firebase"
+    "Hosted with Google Firebase"
 ]
 
 function loadWebLinks(element, socket) {

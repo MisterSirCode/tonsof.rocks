@@ -1,7 +1,6 @@
 const mods = [
 	["teardown", "Quilez Laser", "quilezlaser.jpg", false, "https://steamcommunity.com/sharedfiles/filedetails/?id=2697004953", 
-        "Hand held laser from the Quilez Security map. Written with <3 using UMF."],
-    ["teardown", ]
+        "Hand held laser from the Quilez Security map. Written with <3 using UMF."]
 ];
 
 function loadMods(element, imagePath, game) {
