@@ -1,6 +1,9 @@
 :root {
     --main: #000;
     --font: #fff;
+    --fonth: #999;
+    --topbar: 80px;
+    --topm: 25px;
 }
 
 * {
@@ -8,52 +11,58 @@
     padding: 0;
     margin: 0;
     user-select: none;
-    overflow: hidden;
     color: var(--font);
     font-family: 'Montserrat';
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
-.md {
+*::-webkit-scrollbar { 
+    display: none;
+}
+
+body {
     background-color: black;
+}
+
+.navigation {
+    position: sticky;
+    width: 70vw;
+    height: var(--topbar);
+    margin: auto;
+    margin-top: var(--topm);
     display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
-
-.siteContainer {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-.sideBarContainer {
-    width: 20vw;
-    height: 100%;
-    border-right: 1px solid white;
-}
-
-.sideBarLinks {
-    flex-direction: column;
+    animation: 500ms ease-out 0s 1 FadeIn;
     justify-content: space-evenly;
-    height: 50%;
-    padding: 10px;
+    align-items: center;
+    background: black;
+    z-index: 2;
+    max-width: 768px;
 }
 
-.link, .link:visited, .link:active {
-    color: var(--font);
+a, a:visited, a:active {
     text-decoration: none;
-    font-size: 1.5em;
+    color: var(--font);
+    transition: 250ms;
+    padding: 5px;
+    font-size: 1.2em;
 }
 
-.link:hover {
-    text-decoration: underline;
+a:hover {
+    font-size: 1.4em;
+    color: var(--fonth);
+    cursor: pointer;
 }
 
-.contentContainer {
-    width: 80vw;
-    height: 100%;
+.content {
+    overflow: hidden;
+    padding-top: calc(var(--topm) * 2 + var(--topbar));
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
 }
 
 .contentFrame {
@@ -62,25 +71,14 @@
 }
 
 .article {
-    text-align: center;
+    padding: 50px;
 }
-
-.pageContainer {
-    width: 100vw;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-body{animation: 500ms ease-out 0s 1 FadeIn;}
 
 @keyframes FadeIn {
     0% {
-        opacity:0;
+        opacity: 0;
     }
     100% {
-        opacity:1;
+        opacity: 1;
     }
 }
