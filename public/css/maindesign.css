@@ -55,6 +55,11 @@ a:hover {
     cursor: pointer;
 }
 
+a.noclick {
+    pointer-events: none;
+    color: var(--fonth);
+}
+
 .content {
     overflow: hidden;
     padding-top: calc(var(--topm) * 2 + var(--topbar));
@@ -70,8 +75,27 @@ a:hover {
     height: inherit;
 }
 
+.contentCover {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    background: black;
+    transition: 250ms;
+    opacity: 0%;
+    pointer-events: none;
+}
+
+.visible {
+    opacity: 100%;
+    pointer-events: auto;
+}
+
 .article {
     padding: 50px;
+    animation: 500ms ease-out 0s 1 FadeIn;
 }
 
 @keyframes FadeIn {
