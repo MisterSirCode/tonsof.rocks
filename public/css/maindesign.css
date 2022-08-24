@@ -120,6 +120,21 @@ a.noclick {
     color: #444;
 }
 
+.overlayImage {
+    width: 100%;
+}
+
+.brightLink, .brightLink:visited, .brightLink:active {
+    color: #00cc99;
+}
+
+.brightLink:hover {
+    font-size: 1.4em;
+    color: #00ccff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 @keyframes FadeIn {
     0% {
         opacity: 0;
