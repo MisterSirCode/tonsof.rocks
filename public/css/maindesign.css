@@ -52,7 +52,6 @@ a, a:visited, a:active {
 }
 
 a:hover {
-    font-size: 1.4em;
     color: var(--fonth);
     cursor: pointer;
 }
@@ -129,7 +128,6 @@ a.noclick {
 }
 
 .brightLink:hover {
-    font-size: 1.4em;
     color: #00ccff;
     text-decoration: underline;
     cursor: pointer;

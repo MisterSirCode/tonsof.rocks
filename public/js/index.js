@@ -1,4 +1,4 @@
-let alist = document.querySelectorAll('a');
+let alist = document.querySelectorAll('.navigation a');
 let frame = document.querySelector('.contentFrame');
 let cover = document.querySelector('.contentCover');
 let isLoaded = true;
@@ -22,14 +22,14 @@ frame.addEventListener('load', () => {
 function loadPage(name) {
     if (pageLoading) return;
     startCover();
-    //pageLoading = true;
+    pageLoading = true;
     let xhr = new XMLHttpRequest();
     xhr.onload = function() {
         console.log('loaded');
         frame.innerHTML = this.responseXML.documentElement.innerHTML;
         console.log(this.responseXML);
         endCover();
-        //pageLoading = false;
+        pageLoading = false;
     };
     delay(125).then(() => {
         location.hash = name;
