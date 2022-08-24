@@ -2,6 +2,7 @@ let alist = document.querySelectorAll('a');
 let frame = document.querySelector('.contentFrame');
 let cover = document.querySelector('.contentCover');
 let isLoaded = true;
+let pageLoading = false;
 
 function delay(time) {
     return new Promise(resolve => setTimeout(resolve, time));
@@ -19,9 +20,21 @@ frame.addEventListener('load', () => {
 })
 
 function loadPage(name) {
+    if (pageLoading) return;
     startCover();
-    delay(250).then(() => {
-        frame.src = `./pages/${name}.html`;
+    //pageLoading = true;
+    let xhr = new XMLHttpRequest();
+    xhr.onload = function() {
+        console.log('loaded');
+        frame.innerHTML = this.responseXML.documentElement.innerHTML;
+        console.log(this.responseXML);
+        endCover();
+        //pageLoading = false;
+    };
+    delay(125).then(() => {
+        xhr.open('get', `./pages/${name}.html`);
+        xhr.responseType = 'document';
+        xhr.send();
     });
 }
 
