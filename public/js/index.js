@@ -32,6 +32,7 @@ function loadPage(name) {
         //pageLoading = false;
     };
     delay(125).then(() => {
+        location.hash = name;
         xhr.open('get', `./pages/${name}.html`);
         xhr.responseType = 'document';
         xhr.send();

@@ -23,6 +23,9 @@
     </body>
     <script src="./js/index.js"></script>
     <script>
-        loadPage('Intro');
+        if (location.hash.length > 0)
+            loadPage(location.hash.replace('#', ''));
+        else
+            loadPage('Home');
     </script>
 </html>
