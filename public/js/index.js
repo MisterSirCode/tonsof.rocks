@@ -1,5 +1,3 @@
-const { isMainThread } = require("worker_threads");
-
 let alist = document.querySelectorAll('.navigation a');
 let frame = document.querySelector('.contentFrame');
 let cover = document.querySelector('.contentCover');
@@ -17,10 +15,6 @@ for (var el = 0; el < alist.length; el++) {
     });
 }
 
-frame.addEventListener('load', () => {
-    endCover();
-})
-
 function loadPage(name) {
     if (pageLoading) return;
     startCover();
@@ -31,14 +25,19 @@ function loadPage(name) {
         let imgsLoded = 0;
         let imgs = frame.querySelectorAll('img');
         let totalImgs = imgs.length;
-        for (i in imgs) {
-            imgs[i].addEventListener("load", (e) => {
-                imgsLoded++;
-                if (imgsLoded == totalImgs) {
-                    endCover();
-                    pageLoading = false;
-                }
-            });
+        if (totalImgs == 0) {
+            endCover();
+            pageLoading = false;
+        } else {
+            for (let i = 0; i < totalImgs; i++) {
+                imgs[i].addEventListener("load", (e) => {
+                    imgsLoded++;
+                    if (imgsLoded == totalImgs) {
+                        endCover();
+                        pageLoading = false;
+                    }
+                });
+            }
         }
     };
     delay(125).then(() => {
