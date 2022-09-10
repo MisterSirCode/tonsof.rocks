@@ -1,3 +1,5 @@
+const { isMainThread } = require("worker_threads");
+
 let alist = document.querySelectorAll('.navigation a');
 let frame = document.querySelector('.contentFrame');
 let cover = document.querySelector('.contentCover');
@@ -25,11 +27,19 @@ function loadPage(name) {
     pageLoading = true;
     let xhr = new XMLHttpRequest();
     xhr.onload = function() {
-        console.log('loaded');
         frame.innerHTML = this.responseXML.documentElement.innerHTML;
-        console.log(this.responseXML);
-        endCover();
-        pageLoading = false;
+        let imgsLoded = 0;
+        let imgs = frame.querySelectorAll('img');
+        let totalImgs = imgs.length;
+        for (i in imgs) {
+            imgs[i].addEventListener("load", (e) => {
+                imgsLoded++;
+                if (imgsLoded == totalImgs) {
+                    endCover();
+                    pageLoading = false;
+                }
+            });
+        }
     };
     delay(125).then(() => {
         location.hash = name;
