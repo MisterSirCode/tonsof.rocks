@@ -133,6 +133,10 @@ a.noclick {
     cursor: pointer;
 }
 
+.adaptiveImage {
+    width: 100%;
+}
+
 @keyframes FadeIn {
     0% {
         opacity: 0;
