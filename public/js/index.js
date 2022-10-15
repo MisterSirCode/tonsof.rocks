@@ -1,6 +1,7 @@
 let alist = document.querySelectorAll('.navigation a');
 let frame = document.querySelector('.contentFrame');
 let cover = document.querySelector('.contentCover');
+let curpage = "";
 let isLoaded = true;
 let pageLoading = false;
 
@@ -17,6 +18,7 @@ for (var el = 0; el < alist.length; el++) {
 
 function loadPage(name) {
     if (pageLoading) return;
+    document.title = "Loading...";
     startCover();
     pageLoading = true;
     let xhr = new XMLHttpRequest();
@@ -45,6 +47,7 @@ function loadPage(name) {
         xhr.open('get', `./pages/${name}.html`);
         xhr.responseType = 'document';
         xhr.send();
+        curpage = name;
     });
 }
 
@@ -57,6 +60,7 @@ function startCover() {
 }
 
 function endCover() {
+    document.title = curpage;
     for (var el = 0; el < alist.length; el++) {
         let cel = alist[el];
         cel.classList.remove('noclick');
