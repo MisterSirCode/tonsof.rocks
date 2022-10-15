@@ -27,5 +27,12 @@
             </div>
         </div>
     </body>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script>
+        if (location.hash.length > 0)
+            loadPage(location.hash.replace('#', ''));
+        else
+            loadPage('Home');
+    </script>
 </html>
 
