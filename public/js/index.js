@@ -60,7 +60,7 @@ function startCover() {
 }
 
 function endCover() {
-    document.title = curpage;
+    document.title = document.querySelector("div.article.centered").getAttribute("_title");
     for (var el = 0; el < alist.length; el++) {
         let cel = alist[el];
         cel.classList.remove('noclick');
