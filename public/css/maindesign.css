@@ -137,6 +137,10 @@ a.noclick {
     width: 70%;
 }
 
+.projectLink {
+    text-decoration: underline;
+}
+
 @keyframes FadeIn {
     0% {
         opacity: 0;

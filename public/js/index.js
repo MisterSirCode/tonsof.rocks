@@ -4,6 +4,9 @@ let cover = document.querySelector('.contentCover');
 let curpage = "";
 let isLoaded = true;
 let pageLoading = false;
+let projects = [
+    'ptable'
+];
 
 function delay(time) {
     return new Promise(resolve => setTimeout(resolve, time));
@@ -18,6 +21,7 @@ for (var el = 0; el < alist.length; el++) {
 
 function loadPage(name) {
     if (pageLoading) return;
+    let isProject = projects.includes(name) ? true : false;
     document.title = "Loading...";
     startCover();
     pageLoading = true;
@@ -43,8 +47,8 @@ function loadPage(name) {
         }
     };
     delay(125).then(() => {
-        location.hash = name;
-        xhr.open('get', `./pages/${name}.html`);
+        location.hash = isProject ? `Projects.${name}` : name;
+        xhr.open('get', isProject ? `./projects/${name}/index.html` : `./pages/${name}.html`);
         xhr.responseType = 'document';
         xhr.send();
         curpage = name;
