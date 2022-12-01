@@ -1,0 +1,3 @@
+[submodule "public/projects/Periodic-Collector"]
+	path = public/projects/Periodic-Collector
+	url = https://github.com/MisterSirCode/Periodic-Collector.git
