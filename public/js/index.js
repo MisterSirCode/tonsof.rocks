@@ -7,7 +7,7 @@ let pageLoading = false;
 let projects = [
     'ptable'
 ];
-let copyrightMessage = 'Copyright © Tyler S (2022) - '
+let copyrightMessage = 'Copyright © Tyler S (2022) - SV 0.0.1';
 
 function delay(time) {
     return new Promise(resolve => setTimeout(resolve, time));
@@ -32,6 +32,15 @@ function loadPage(name) {
         let imgsLoded = 0;
         let imgs = frame.querySelectorAll('img');
         let totalImgs = imgs.length;
+        if (name == 'Projects') {
+            let els = document.querySelectorAll(".projectLink");
+            for (let e = 0; e < els.length; e++) {
+                els[e].addEventListener("click", () => {
+                    loadPage(els[e].dataset.id);
+                    console.log("test");
+                });
+            }
+        }
         if (totalImgs == 0) {
             endCover();
             pageLoading = false;
@@ -76,5 +85,8 @@ function endCover() {
 function copyright() {
     let el = document.querySelector('.marginBox');
     let cprt = document.createElement('span');
-    cprt.innerText = 
+    cprt.innerText = copyrightMessage;
+    cprt.className = 'copyrightLabel';
+    el.appendChild(cprt);
+    console.log("copyright message created");
 }
