@@ -1,6 +1,3 @@
-[submodule "public/projects/Periodic-Collector"]
-	path = public/projects/Periodic-Collector
-	url = https://github.com/MisterSirCode/Periodic-Collector.git
 [submodule "public/projects/ptable"]
 	path = public/projects/ptable
 	url = https://github.com/MisterSirCode/Periodic-Collector.git
