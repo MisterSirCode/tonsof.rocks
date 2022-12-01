@@ -7,6 +7,7 @@ let pageLoading = false;
 let projects = [
     'ptable'
 ];
+let copyrightMessage = 'Copyright © Tyler S (2022) - '
 
 function delay(time) {
     return new Promise(resolve => setTimeout(resolve, time));
@@ -70,4 +71,10 @@ function endCover() {
         cel.classList.remove('noclick');
     }
     cover.classList.remove('visible');
+}
+
+function copyright() {
+    let el = document.querySelector('.marginBox');
+    let cprt = document.createElement('span');
+    cprt.innerText = 
 }
