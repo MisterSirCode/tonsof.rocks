@@ -1,0 +1,151 @@
+:root {
+    --main: #000;
+    --font: #fff;
+    --fonth: #999;
+    --topbar: 80px;
+    --topm: 25px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    color: var(--font);
+    font-family: 'Montserrat';
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+*::-webkit-scrollbar { 
+    display: none;
+}
+
+body {
+    background-color: black;
+}
+
+.navigation {
+    position: sticky;
+    width: 70vw;
+    height: var(--topbar);
+    margin: auto;
+    margin-top: var(--topm);
+    display: flex;
+    animation: 500ms ease-out 0s 1 FadeIn;
+    justify-content: space-evenly;
+    align-items: center;
+    background: transparent;
+    backdrop-filter: blur(1px);
+    z-index: 2;
+    max-width: 768px;
+    border-bottom: 1px solid white;
+}
+
+a, a:visited, a:active {
+    text-decoration: none;
+    color: var(--font);
+    transition: 125ms;
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+a:hover {
+    color: var(--fonth);
+    cursor: pointer;
+}
+
+a.noclick {
+    pointer-events: none;
+    color: var(--fonth);
+}
+
+.content {
+    overflow: hidden;
+    padding-top: calc(var(--topm) * 2 + var(--topbar));
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+.contentFrame {
+    width: inherit;
+    height: inherit;
+}
+
+.contentCover {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    background: black;
+    transition: 125ms;
+    opacity: 0%;
+    pointer-events: none;
+}
+
+.visible {
+    opacity: 100%;
+    pointer-events: auto;
+}
+
+.article {
+    padding: 50px;
+    animation: 500ms ease-out 0s 1 FadeIn;
+}
+
+.centered {
+    text-align: center;
+}
+
+.centered img {
+    margin: auto;
+    display: block;
+}
+
+.marginBox {
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.copyrightLabel {
+    color: #444;
+}
+
+.overlayImage {
+    width: 100%;
+}
+
+.brightLink, .brightLink:visited, .brightLink:active {
+    color: #00cc99;
+}
+
+.brightLink:hover {
+    color: #00ccff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.adaptiveImage {
+    width: 70%;
+}
+
+.projectLink {
+    text-decoration: underline;
+}
+
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
