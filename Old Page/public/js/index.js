@@ -7,7 +7,6 @@ let pageLoading = false;
 let projects = [
     'ptable'
 ];
-let copyrightMessage = 'Copyright © Tyler S (2022) - SV 0.0.1';
 
 function delay(time) {
     return new Promise(resolve => setTimeout(resolve, time));

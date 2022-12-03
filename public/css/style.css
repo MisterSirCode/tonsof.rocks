@@ -1,0 +1,36 @@
+:root {
+    --main: #000;
+    --font: #fff;
+    --fonth: #999;
+    --topbar: 80px;
+    --topm: 25px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    color: var(--font);
+    font-family: 'Montserrat';
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+*::-webkit-scrollbar { 
+    display: none;
+}
+
+body {
+    background-color: black;
+}
+
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
