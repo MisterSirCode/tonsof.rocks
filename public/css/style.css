@@ -29,6 +29,7 @@ root, body {
     bottom: 0;
     width: 100vw;
     line-height: 4em;
+    font-size: 0.8em;
     text-align: center;
     color: var(--testCol);
 }
@@ -59,7 +60,6 @@ root, body {
 
 .navLink {
     position: relative;
-    cursor: pointer;
     margin: 2em;
     background: var(--testCol);
     text-align: center;
@@ -75,9 +75,15 @@ root, body {
     border-radius: 5px;
 }
 
-.navSubLink:hover {
+.navSubLink:not(.active):hover {
     font-size: 1.1em;
     text-shadow: 0px 0px 1em rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+
+.navSubLink.active {
+    color: gray;
+    border: 1px solid gray;
 }
 
 .verticalBorder {
