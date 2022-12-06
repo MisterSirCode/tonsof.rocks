@@ -39,9 +39,16 @@ function addLinkFunctionality() {
     let links = document.querySelectorAll('.navSubLink');
     links.forEach((el) => {
         el.addEventListener('click', () => {
+            if (loc == el.dataset.linkpage) return;
             location.hash = loc = el.dataset.linkpage;
             refreshLinks();
-            swapPage(loc);
+            fadeOut();
+            delay(100).then(() => {
+                swapPage(loc).then(() => {
+                    refreshLinks();
+                    fadeIn();
+                });
+            });
         });
     });
 }
