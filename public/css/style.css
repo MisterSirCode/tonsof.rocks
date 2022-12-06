@@ -67,7 +67,7 @@ root, body {
 
 .navSubLink {
     position: absolute;
-    transition: ease all 0.7s;
+    transition: ease all 0.2s;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
