@@ -24,65 +24,14 @@ root, body {
     background-color: black;
 }
 
+/* Actual Page Theme */
+
 .inlayPage {
-    position: fixed;
-    background-color: black;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    background-color: white;
 }
 
 .navCollection {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    animation: FallIn 1s ease;
-}
-
-.navDrop {
-    border-radius: 5px;
-    border: 1px solid gray;
-    line-height: calc(1em - 1px);
-    padding: 8px;
-}
-
-.navDrop:hover {
-    text-shadow: 0px 1px 15px rgba(255, 255, 255, 1);
-    border: 1px solid white;
-}
-
-.navDrop:active {
-    text-shadow: 0px 1px 30px rgba(255, 255, 255, 1);
-    border: 1px solid gray;
-}
-
-.sh:hover {
-    text-shadow: 0px 1px 15px rgba(255, 255, 255, 1),
-                0px 1px 15px rgba(255, 255, 255, 1);
-}
-
-.navBlock {
-    position: fixed;
-}
-
-.navBlock.inactive {
-
-}
-
-.button {
-    cursor: pointer;
-}
-
-@keyframes FallIn {
-    0% {
-        top: -50%;
-    }
-    100% {
-        top: none;
-    }
+    background: gray;
 }
 
 @keyframes FadeIn {
