@@ -96,6 +96,34 @@ root, body {
 .inlayPage {
     width: 70%;
     height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    transition: 0.1s;
+}
+
+.inlayPage::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0%;
+    animation: FadeOut 0.1s;
+}
+
+.inlayPage.hidden::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 1;
+    animation: FadeIn 0.1s;
 }
 
 @keyframes FadeIn {
@@ -104,5 +132,14 @@ root, body {
     }
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes FadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }

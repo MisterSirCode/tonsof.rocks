@@ -4,6 +4,7 @@ let loc = pages[0];
 let linkrefs = [];
 let pageLoading = false;
 let innerPage = document.querySelector('.inlayPage');
+let preloaded = false;
 
 function delay(time) {
     return new Promise(resolve => setTimeout(resolve, time));
@@ -45,40 +46,55 @@ function addLinkFunctionality() {
     });
 }
 
+function fadeIn() {
+    innerPage.classList.remove('hidden');
+}
+
+function fadeOut() {
+    innerPage.classList.add('hidden');
+}
+
 function swapPage(path) {
-    if (pageLoading) return;
-    pageLoading = true;
-    let xhr = new XMLHttpRequest();
-    xhr.onload = function() {
-        innerPage.innerHTML = this.responseXML.documentElement.innerHTML;
-        let imgsLoded = 0;
-        let imgs = innerPage.querySelectorAll('img');
-        let totalImgs = imgs.length;
-        if (totalImgs == 0) {
-            pageLoading = false;
-        } else {
-            for (let i = 0; i < totalImgs; i++) {
-                imgs[i].addEventListener("load", (e) => {
-                    imgsLoded++;
-                    if (imgsLoded == totalImgs) {
-                        pageLoading = false;
-                    }
-                });
+    return new Promise(resolve => {
+        if (pageLoading) return;
+        pageLoading = true;
+        let xhr = new XMLHttpRequest();
+        xhr.onload = function() {
+            innerPage.innerHTML = this.responseXML.documentElement.innerHTML;
+            let imgsLoded = 0;
+            let imgs = innerPage.querySelectorAll('img');
+            let totalImgs = imgs.length;
+            if (totalImgs == 0) {
+                pageLoading = false;
+                resolve(true);
+            } else {
+                for (let i = 0; i < totalImgs; i++) {
+                    imgs[i].addEventListener("load", (e) => {
+                        imgsLoded++;
+                        if (imgsLoded == totalImgs) {
+                            pageLoading = false;
+                            resolve(true);
+                        }
+                    });
+                }
             }
-        }
-    };
-    delay(125).then(() => {
+        };
         xhr.open('get', `./pages/${path}.html`);
         xhr.responseType = 'document';
         xhr.send();
     });
 }
 
-window.onload = () => {
+window.onload = async () => {
     document.querySelector('.copyright').innerText = copyright;
     if (location.hash)
         loc = location.hash.replace('#', '').toLowerCase();
-    drawLinkNavi();
-    refreshLinks();
-    addLinkFunctionality();
+    delay(100).then(() => {
+        swapPage(loc).then(() => {
+            drawLinkNavi();
+            refreshLinks();
+            addLinkFunctionality();
+            fadeIn();
+        });
+    });
 };
