@@ -66,6 +66,7 @@ root, body {
 }
 
 .navSubLink {
+    width: 5em;
     position: absolute;
     transition: ease all 0.2s;
     top: 50%;
