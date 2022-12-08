@@ -58,17 +58,17 @@ article {
 
 article * {
     opacity: 0;
-}
-
-h1 {
     animation: FadeIn 1s forwards;
+    line-height: 1.5rem;
     animation-delay: 0.3s;
 }
 
 p {
-    line-height: 1.5rem;
-    animation: FadeIn 1s forwards;
     animation-delay: 2s;
+}
+
+.linkGrid {
+    display: grid;
 }
 
 @keyframes FadeIn {
