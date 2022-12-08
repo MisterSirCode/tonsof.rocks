@@ -1,5 +1,6 @@
 :root {
     --testCol: rgba(255, 255, 255, 0.2);
+    --border: rgba(255, 255, 255, 0.7);
 }
 
 * {
@@ -10,7 +11,6 @@
     color: white;
     font-family: 'montserrat', 'firacode';
     font-weight: bolder;
-    overflow: hidden;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
@@ -19,8 +19,9 @@
     display: none;
 }
 
-root, body {
+body {
     background-color: black;
+    overflow: hidden;
 }
 
 /* Actual Page Theme */
@@ -43,9 +44,9 @@ root, body {
     height: 100vh;
     flex-direction: column-reverse;
     flex-wrap: wrap;
-    text-align: left;
     justify-content: center;
     align-content: center;
+    text-align: left;
 }
 
 article {
@@ -68,7 +69,20 @@ p {
 }
 
 .linkGrid {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    animation-delay: 3s;
+}
+
+.linkGrid a img {
+    height: 2rem;
+    filter: 
+        drop-shadow(-1px -1px 0px var(--border)) 
+        drop-shadow(1px -1px 0px var(--border)) 
+        drop-shadow(1px 1px 0px var(--border))
+        drop-shadow(-1px 1px 0px var(--border));
 }
 
 @keyframes FadeIn {
