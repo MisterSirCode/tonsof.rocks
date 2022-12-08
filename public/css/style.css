@@ -1,5 +1,5 @@
 :root {
-    --testCol: rgba(255, 255, 255, 0.3);
+    --testCol: rgba(255, 255, 255, 0.2);
 }
 
 * {
@@ -9,6 +9,7 @@
     user-select: none;
     color: white;
     font-family: 'montserrat', 'firacode';
+    font-weight: bolder;
     /* overflow: hidden; */
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -44,11 +45,8 @@ root, body {
     flex-wrap: wrap;
 }
 
-.flexboxCollection > * {
-    flex: 1 1 50%;
-}
-
 .navCollection {
+    position: absolute;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -56,6 +54,7 @@ root, body {
     justify-content: center;
     width: calc(30% - 2px);
     height: 100%;
+    background: var(--testCol);
 }
 
 .navLink {
@@ -88,13 +87,6 @@ root, body {
     border: 1px solid var(--testCol);
 }
 
-.verticalBorder {
-    width: 2px;
-    height: 100%;
-    flex: 0 0 auto; 
-    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, var(--testCol) 25%, var(--testCol) 75%, rgba(0,0,0,0) 100%);
-}
-
 .inlayPage {
     width: 70%;
     height: 100%;
@@ -104,6 +96,7 @@ root, body {
     justify-content: center;
     align-content: center;
     transition: 0.1s;
+    background: var(--testCol);
 }
 
 .inlayPage::after {
