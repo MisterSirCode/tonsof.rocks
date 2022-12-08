@@ -80,6 +80,10 @@ p {
     animation-delay: 3s;
 }
 
+.linkGrid a {
+    padding: 5px;
+}
+
 .linkGrid a img {
     height: 2rem;
     filter: 
