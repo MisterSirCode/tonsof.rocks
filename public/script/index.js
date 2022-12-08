@@ -7,14 +7,17 @@ const isMobile =
 const $ = (s) => document.querySelector(s);
 const article = $('article');
 const collect = $('.flexboxCollection');
+const links = $('.linkGrid');
 
 function refresh() {
     if (isMobile || window.innerHeight > window.innerWidth) {
         article.classList.add('mobile');
         collect.classList.add('mobile');
+        links.classList.add('mobile');
     } else {
         article.classList.remove('mobile');
         collect.classList.remove('mobile');
+        links.classList.add('mobile');
     }
 }
 

@@ -94,6 +94,10 @@ p {
         drop-shadow(-1px 1px 0px var(--border));
 }
 
+.linkGrid.mobile a img {
+    height: 1rem;
+}
+
 @keyframes FadeIn {
     0% {
         opacity: 0;
