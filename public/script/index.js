@@ -13,11 +13,12 @@ function refresh() {
     if (isMobile || window.innerHeight > window.innerWidth) {
         article.classList.add('mobile');
         collect.classList.add('mobile');
-        links.classList.add('mobile');
+        if (window.innerWidth < 512) 
+            links.classList.add('mobile');
     } else {
         article.classList.remove('mobile');
         collect.classList.remove('mobile');
-        links.classList.add('mobile');
+        links.classList.remove('mobile');
     }
 }
 
