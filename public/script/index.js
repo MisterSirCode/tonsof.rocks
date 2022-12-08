@@ -17,7 +17,7 @@ function refresh() {
         article.classList.remove('mobile');
         collect.classList.remove('mobile');
     }
-    if (window.innerWidth < 400) 
+    if (window.innerWidth < 450) 
         links.classList.add('mobile');
     else
         links.classList.remove('mobile');
