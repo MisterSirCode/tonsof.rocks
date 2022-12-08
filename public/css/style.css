@@ -57,6 +57,10 @@ article {
     /* background: var(--testCol); */
 }
 
+article.mobile {
+    width: 100%;
+}
+
 article * {
     opacity: 0;
     animation: FadeIn 1s forwards;
