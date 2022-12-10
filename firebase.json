@@ -9,6 +9,9 @@
     "rewrites": [{
       "source": "**",
       "destination": "/index.html"
+    }, {
+      "source": "pcollector",
+      "destination": "/projects/pcollector/index.html"
     }]
   }
 }
