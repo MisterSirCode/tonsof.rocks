@@ -31,23 +31,27 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1em;
 }
 
 p {
     padding-top: 2em;
+    font-size: 0.9em;
+    max-width: 40em;
 }
 
-h2 {
+h3 {
     color: gray;
 }
 
 .copyright {
-    color: gray;
+    color: #444;
     position: fixed;
     bottom: 2em;
     left: 0;
     right: 0;
     text-align: center;
+    font-size: 0.8em;
 }
 
 @keyframes FadeIn {
