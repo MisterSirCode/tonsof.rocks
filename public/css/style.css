@@ -2,6 +2,23 @@
     line-height: 1.5em;
 }
 
+.navi {
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: left;
+    padding: 1em;
+    z-index: 2;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .contentbox {
     position: fixed;
     top: 0;
@@ -24,21 +41,13 @@ h2 {
     color: gray;
 }
 
-.navi {
+.copyright {
+    color: gray;
     position: fixed;
-    top: 0;
+    bottom: 2em;
     left: 0;
-    text-align: left;
-    padding: 1em;
-    z-index: 2;
-}
-
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+    right: 0;
+    text-align: center;
 }
 
 @keyframes FadeIn {
