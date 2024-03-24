@@ -1,100 +1,44 @@
-:root {
-    --testCol: rgba(255, 255, 255, 0.2);
-    --border: rgba(255, 255, 255, 0.7);
-}
-
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    user-select: none;
-    color: #fff;
-    font-family: 'montserrat', 'firacode';
-    font-weight: bolder;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    line-height: 1.5em;
 }
 
-*::-webkit-scrollbar { 
-    display: none;
-}
-
-body {
-    background-color: black;
-    overflow: hidden;
-}
-
-/* Actual Page Theme */
-
-.copyright {
+.contentbox {
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     bottom: 0;
-    width: 100vw;
-    line-height: 4rem;
-    font-size: 0.8rem;
     text-align: center;
-    color: var(--testCol);
-}
-
-.flexboxCollection {
+    vertical-align: middle;
     display: flex;
-    position: relative;
-    padding: 10% 16px 10% 16px;
-    width: 100vw;
-    height: 100vh;
-    flex-direction: column-reverse;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    align-content: center;
-    text-align: left;
-}
-
-article {
-    display: block;
-    width: 50%;
-    padding: 5px;
-    text-align: center;
-    /* background: var(--testCol); */
-}
-
-article.mobile {
-    width: 100%;
-}
-
-article * {
-    opacity: 0;
-    animation: FadeIn 1s forwards;
-    line-height: 1.5rem;
-    animation-delay: 0.3s;
+    align-items: center;
 }
 
 p {
-    animation-delay: 2s;
+    padding-top: 2em;
 }
 
-.linkGrid {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem;
-    animation-delay: 3s;
+h2 {
+    color: gray;
 }
 
-.linkGrid a {
-    padding: 5px;
+.navi {
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: left;
+    padding: 1em;
+    z-index: 2;
 }
 
-.linkGrid a img {
-    height: 2rem;
-    filter: 
-        drop-shadow(-1px -1px 0px var(--border)) 
-        drop-shadow(1px -1px 0px var(--border)) 
-        drop-shadow(1px 1px 0px var(--border))
-        drop-shadow(-1px 1px 0px var(--border));
+a {
+    text-decoration: none;
 }
 
-.linkGrid.mobile a img {
-    height: 1.3rem;
+a:hover {
+    text-decoration: underline;
 }
 
 @keyframes FadeIn {

@@ -1,49 +1,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tons of Rocks</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="font/montserrat.css">
     <link rel="stylesheet" href="font/firacode.css">
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            user-select: none;
+            color: #fff;
+            font-family: 'firacode';
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        *::-webkit-scrollbar { 
+            display: none;
+        }
+
+        body {
+            background-color: black;
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
-    <div class="flexboxCollection">
-        <article>
-            <h1>A Simple Portfolio of Sorts</h1>
-            <h6>(This site is still being worked on)</h6>
-            <br>
-            <p>
-                Im an amatuer programmer and 3D artist. I go by the nickname "SirCode" or "MisterSirCode" online.
-                Ive been writing in a multitude of languages over the last nine or so years.
-                Im currently working towards my college tuition to follow a major in Computer Science.
-                I dabble in CGI aswell as demoscene (Shader Art) and even digital painting occasionally.
-                (You can view a sample of some of my art on artstation)
-            </p>
-            <br>
-            <p>
-                Links for my things:
-            </p>
-            <br><br>
-            <div class="linkGrid">
-                <a href="https://www.artstation.com/sircode" target="_blank" class=".link_artstation">
-                    <img src="./image/artstation.svg" alt="">
-                </a>
-                <a href="https://discord.gg/SPMCrUvfHs" target="_blank" class=".link_discord">
-                    <img src="./image/discord.svg" alt="">
-                </a>
-                <a href="https://github.com/MisterSirCode" target="_blank" class=".link_github">
-                    <img src="./image/github_small.png" alt="">
-                </a>
-                <a href="https://www.buymeacoffee.com/sircode" target="_blank" class=".link_coffee">
-                    <img src="./image/buymeacoffee.svg" alt="">
-                </a>
-            </div>
-        </article>
+    <div class="navi">
+        <a href="" class="link home">Home</a><br>
+        <a href="" class="link rocks">Rocks</a><br>
+        <a href="" class="link projects">Projects</a><br>
     </div>
-    <span class="copyright">Copyright © Sir Code (2023) - sv 0.0.3</span>
-    <br>
+    <div class="contentbox">
+        <h1>Tons of Rocks</h1>
+        <h2>Just a random website</h5>
+        <p>Im not quite sure what to put here.
+            <br>This is a little website I tossed together.
+            <br>I mainly use it to host my media server,
+            <br>but the frontend is a nice little touch</p>
+    </div>
 </body>
-<script src="./script/index.js"></script>
 </html>
