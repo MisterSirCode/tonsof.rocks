@@ -1,3 +1,5 @@
-# mistersircode.com
+# tonsof.rocks
 
-Host repository storing the latest version of my site. I pull changes from this repo to a VPS and host it through Apache2
+Host repository storing the latest version of my site
+
+Hosted for free forever via Firebase, thanks to google and cloudflare.
