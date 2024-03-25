@@ -1,5 +1,34 @@
 * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    color: #fff;
+    font-family: 'firacode';
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     line-height: 1.5em;
+}
+
+*::-webkit-scrollbar { 
+    display: none;
+}
+
+body {
+    background-color: black;
+    overflow: scroll;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
 }
 
 .navi {
@@ -28,25 +57,10 @@ a:hover {
     vertical-align: middle;
 }
 
-.contentbox {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    text-align: center;
-    vertical-align: middle;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
-}
-
-p {
+.desc {
     padding-top: 2em;
     font-size: 0.9em;
-    max-width: 40em;
+    max-width: 46em;
 }
 
 h3 {
@@ -54,13 +68,20 @@ h3 {
 }
 
 .copyright {
-    color: #444;
     position: fixed;
-    bottom: 2em;
     left: 0;
     right: 0;
-    text-align: center;
+    bottom: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyrightLabel {
+    padding: 1em;
     font-size: 0.8em;
+    color: #444;
+    width: fit-content;
 }
 
 @keyframes FadeIn {

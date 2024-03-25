@@ -8,24 +8,38 @@
     <link rel="stylesheet" href="../font/montserrat.css">
     <link rel="stylesheet" href="../font/firacode.css">
     <style>
-        * {
-            box-sizing: border-box;
-            padding: 0;
-            margin: 0;
-            user-select: none;
-            color: #fff;
-            font-family: 'firacode';
-            -ms-overflow-style: none;
-            scrollbar-width: none;
+        .copyrightLabel {
+            background-color: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(20px);
+            border-radius: 10px;
+            color: white;
         }
 
-        *::-webkit-scrollbar { 
-            display: none;
+        .gridview {
+            position: relative;
+            width: 100vw;
+            text-align: center;
+            vertical-align: middle;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 1em;
         }
 
-        body {
-            background-color: black;
-            overflow: hidden;
+        .rockitem {
+            max-width: 50%;
+            max-height: 80%;
+        }
+
+        .rockview {
+            max-width: 90%;
+            border-radius: 10px;
+        }
+
+        .gridview * {
+            line-height: 1em;
         }
     </style>
 </head>
@@ -36,14 +50,41 @@
         <a href="../projects/" class="link projects">Projects</a><br>
         <a href="../socials/" class="link socials">Socials</a><br>
     </div>
-    <div class="contentbox">
-        <h1>Mild Obsession for Rocks</h1>
-        <h3>Collecting more than just Minerals though...</h3>
-        <h3>This page will be filled up when I get time</h3>
-        <div class="gridview">
-
+    <h1>Mild Obsession for Rocks</h1>
+    <h3>I collect more than just Minerals though...</h3>
+    <h3>Ill fill this in when I get time..</h3>
+    <div class="gridview">
+        <!-- <div class="rockitem">
+            <p>Dioptase on Quartz<br>Loutete / Republic of Congo</p><br>
+            <img src="img/dioptase_quartz.webp" class="rockview">
         </div>
+        <div class="rockitem">
+            <p>Aegirine on Albite<br>Tormiq Valley / Pakistan</p><br>
+            <img src="img/aegirine_albite.webp" class="rockview">
+        </div>
+        <div class="rockitem">
+            <p>Boleite on Matrix<br>Amelia Mine / Mexico</p><br>
+            <img src="img/boleite2.webp" class="rockview">
+        </div>
+        <div class="rockitem">
+            <p>Boleite on Matrix<br>Amelia Mine / Mexico</p><br>
+            <img src="img/boleite.webp" class="rockview">
+        </div>
+        <div class="rockitem">
+            <p>Hemimorphite<br>Mfouati Mine / Republic of Congo</p><br>
+            <img src="img/hemimorphite.webp" class="rockview">
+        </div>
+        <div class="rockitem">
+            <p>Diamond<br>Panna Mines / India</p><br>
+            <img src="img/diamond.webp" class="rockview">
+        </div>
+        <div class="rockitem">
+            <p>Pyromorphite<br></p><br>
+            <img src="img/pyromorphite.webp" class="rockview">
+        </div> -->
     </div>
-    <div class="copyright">Copyright (c) 2024<br>Property of Taylor Schneider</div>
+    <div class="copyright">
+        <div class="copyrightLabel">Copyright (c) 2024<br>Property of Taylor Schneider</div>
+    </div>
 </body>
 </html>
