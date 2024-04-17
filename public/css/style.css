@@ -52,6 +52,15 @@ a:hover {
     text-decoration: underline;
 }
 
+a.current {
+    color: gray;
+}
+
+a.current:hover {
+    text-decoration: none;
+    cursor: default;
+}
+
 .linkicon {
     width: 2em;
     vertical-align: middle;
