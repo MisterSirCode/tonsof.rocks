@@ -8,6 +8,7 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
     line-height: 1.5em;
+    -webkit-text-size-adjust: 100%;
 }
 
 *::-webkit-scrollbar { 
@@ -18,7 +19,7 @@
     position: absolute;
     width: 100vw;
     height: 100vh;
-    padding: 1em;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
