@@ -36,7 +36,9 @@
     left: 0;
     text-align: left;
     padding: 1em;
-    z-index: 2;
+    z-index: 3;
+    background: black;
+    border-bottom-right-radius: 5px;
 }
 
 .socialink {
@@ -70,14 +72,28 @@ a.current:hover {
     font-size: 1.5em;
 }
 
+.tool-title {
+    text-decoration: underline;
+}
+
 .desc {
-    padding-top: 2em;
+    padding-top: 1em;
     font-size: 0.9em;
-    max-width: 46em;
+    max-width: 75vw;
+}
+
+h1.mobile {
+    font-size: 1.5em;
 }
 
 h3 {
     color: gray;
+}
+
+h3.mobile {
+    font-size: 0.7em;
+    height: fit-content;
+    text-overflow: clip;
 }
 
 .copyright {
@@ -88,6 +104,11 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.copyright.stuck {
+    position: relative;
+    bottom: auto;
 }
 
 .copyrightLabel {
@@ -117,7 +138,7 @@ textarea {
     vertical-align: middle;
     background-color: black;
     text-align: center;
-    padding-bottom: 10em;
+    padding-bottom: 5em;
 }
 
 .gridTitle, .gridSubtitle {
@@ -131,12 +152,23 @@ textarea {
     border-radius: 5px;
 }
 
+.gridBigPhoto.mobile {
+    width: calc(80vw + 1em);
+    margin: 0.5em;
+}
+
 .gridItem {
     position: relative;
     width: 25vw;
     height: 25vw;
     margin: 1em;
     z-index: 2;
+}
+
+.gridItem.mobile {
+    width: 40vw;
+    height: 40vw;
+    margin: 0.5em;
 }
 
 .gridImage {
@@ -155,6 +187,11 @@ textarea {
     bottom: 1em;
     text-shadow: 3px 3px 5px #000000,
                  -3px 3px 5px #000000;
+}
+
+.gridLabel { 
+    /* Hiding labels until I figure out better solutions */
+    display: none;
 }
 
 @keyframes FadeIn {
