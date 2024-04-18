@@ -14,7 +14,7 @@
     display: none;
 }
 
-body {
+.site {
     background-color: black;
     overflow: scroll;
     text-align: center;
@@ -98,7 +98,7 @@ h3 {
     width: fit-content;
 }
 
-input {
+textarea {
     background: inherit;
     border-radius: 5px;
     border: 2px solid white;
