@@ -117,6 +117,7 @@ h3.mobile {
 .copyright.stuck {
     position: relative;
     bottom: auto;
+    width: 100vw;
 }
 
 .copyrightLabel {
