@@ -79,7 +79,15 @@ a.current:hover {
 .desc {
     padding-top: 1em;
     font-size: 0.9em;
-    max-width: 75vw;
+    max-width: 50vw;
+}
+
+.desc.mobile {
+    max-width: 90vw;
+}
+
+.tool-item {
+    padding-top: 2em;
 }
 
 h1.mobile {
