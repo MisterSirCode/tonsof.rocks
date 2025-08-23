@@ -13,5 +13,5 @@ el.addEventListener('input', (elm) => {
         .replace(/(\d)\s/g, '$1.0 ')
     console.log(strings);
     let fixed = strings.split('i');
-    document.querySelector('.endCode').textContent = `z = vec2(${fixed[0]},\n    ${fixed[1]});`;
+    document.querySelector('.endCode').textContent = (`        z = vec2(${fixed[0]},\n        ${fixed[1]});`).replace(/c + | + c/g, '');
 });
