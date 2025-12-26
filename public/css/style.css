@@ -77,8 +77,9 @@ a.current:hover {
 }
 
 .desc {
+    font-weight: bold;
     padding-top: 1em;
-    font-size: 0.9em;
+    font-size: 1em;
     max-width: 50vw;
 }
 
@@ -123,8 +124,13 @@ h3.mobile {
 .copyrightLabel {
     padding: 1em;
     font-size: 0.8em;
-    color: #444;
+    color: #fff;
     width: fit-content;
+    font-weight: bold;
+    text-shadow: #000000 1px 1px 1px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 1em;
 }
 
 textarea {
@@ -217,13 +223,12 @@ textarea {
     right: 1em;
     left: 1em;
     bottom: 1em;
-    text-shadow: 3px 3px 5px #000000,
-                 -3px 3px 5px #000000;
-}
-
-.gridLabel { 
-    /* Hiding labels until I figure out better solutions */
-    display: none;
+    width: fit-content;
+    padding: 0.5em 2em 0.5em 2em;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 1em;
+    margin: auto;
 }
 
 .gridDesc {
