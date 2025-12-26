@@ -231,6 +231,10 @@ textarea {
     margin: auto;
 }
 
+.gridLabel.mobile {
+    display: none;
+}
+
 .gridDesc {
     display: block;
     padding-top: 1em;
